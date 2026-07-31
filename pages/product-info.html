@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Link to the svgs for socials -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<main>
+
+    <section id="product-info">
+        <div class="product-info-container">
+
+            <section class="product-heading">
+                <h1>A Secret Place</h1>
+                <p>Mount Washington Wilderness, Oregon</p>
+            </section>
+
+            <!-- Edition availability -->
+            <section class="edition-status">
+                <div class="edition-progress" role="progressbar" aria-label="Limited-edition availability"
+                    aria-valuemin="0" aria-valuemax="50" aria-valuenow="38">
+                    <span class="edition-progress-fill"></span>
+                </div>
+
+                <h2>12 OF 50 EDITIONS REMAINING</h2>
+                <p>76% sold &bull; Limited edition &bull; Editions close permanently when sold out</p>
+            </section>
+            <!-- Product configuration -->
+            <form id="product-options">
+
+                <!-- Size selector -->
+                <fieldset class="product-option-group size-options">
+                    <legend>SELECT SIZE</legend>
+
+                    <div class="size-option-grid">
+                        <label class="option-button">
+                            <input type="radio" name="size" value="studio">
+                            <span>Studio</span>
+                        </label>
+
+                        <label class="option-button">
+                            <input type="radio" name="size" value="gallery" checked>
+                            <span>Gallery</span>
+                        </label>
+
+                        <label class="option-button">
+                            <input type="radio" name="size" value="statement">
+                            <span>Statement</span>
+                        </label>
+
+                        <label class="option-button">
+                            <input type="radio" name="size" value="collector">
+                            <span>Collector</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Frame selector -->
+                <fieldset class="product-option-group frame-options">
+                    <legend>SELECT FRAME</legend>
+
+                    <div class="frame-option-grid">
+                        <label class="frame-option">
+                            <input type="radio" name="frame" value="float-mount" checked>
+
+                            <span class="frame-option-content">
+                                <strong>Float Mount</strong>
+                                <small>Modern, frameless look</small>
+                            </span>
+                        </label>
+
+                        <label class="frame-option">
+                            <input type="radio" name="frame" value="black-frame">
+
+                            <span class="frame-option-content">
+                                <strong>Black Frame</strong>
+                                <small>Hand-built, solid wood</small>
+                            </span>
+                        </label>
+
+                        <label class="frame-option">
+                            <input type="radio" name="frame" value="gray-frame">
+
+                            <span class="frame-option-content">
+                                <strong>Gray Frame</strong>
+                                <small>Hand-built, solid wood</small>
+                            </span>
+                        </label>
+
+                        <label class="frame-option">
+                            <input type="radio" name="frame" value="brown-frame">
+
+                            <span class="frame-option-content">
+                                <strong>Brown Frame</strong>
+                                <small>Hand-built, solid wood</small>
+                            </span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Liner selector -->
+                <fieldset class="product-option-group liner-options">
+                    <legend>SELECT LINER</legend>
+
+                    <div class="liner-option-grid">
+                        <label class="option-button">
+                            <input type="radio" name="liner" value="none" checked>
+                            <span>No Liner</span>
+                        </label>
+
+                        <label class="option-button">
+                            <input type="radio" name="liner" value="white">
+                            <span>White Liner</span>
+                        </label>
+
+                        <label class="option-button">
+                            <input type="radio" name="liner" value="black">
+                            <span>Black Liner</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Dimensions -->
+                <section class="product-dimensions" aria-live="polite">
+                    <h2>OVERALL DIMENSIONS</h2>
+                    <p>Gallery: 24in &times; 18in (60.96cm &times; 45.72cm)</p>
+                </section>
+
+                <!-- Price -->
+                <section class="product-purchase">
+                    <div class="product-price">
+                        <span class="sr-only">Price:</span>
+                        <p>$995</p>
+                    </div>
+
+                    <div class="product-financing">
+                        <p>
+                            Starting at $300/mo or 0% APR with Affirm.
+                            <a href="#">See if you qualify</a>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Cart button -->
+                <button class="add-to-cart-button" type="submit">
+                    Add to cart
+                </button>
+
+                <p class="product-contact">
+                    <a href="#">Not Sure? Contact an art specialist</a>
+                </p>
+
+            </form>
+
+        </div>
+    </section>
+
+
+</main>
+
+</html>
