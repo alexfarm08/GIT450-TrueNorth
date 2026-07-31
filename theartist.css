@@ -404,6 +404,23 @@ footer {
     width: 1440px;
     height: 64px;
 }
+.nav-links {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #FAF8F5;
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 #artist-main{
     display: flex;
