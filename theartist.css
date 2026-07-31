@@ -392,3 +392,24 @@ footer {
     font-size: 20px;
     color: var(--white);
 }
+
+
+/* GLOBAL STYLES*/
+
+/*nav*/
+#main-nav {
+    background-color: var(--alpine-700);
+    color: var(--mesa-50);
+    padding: 16px 40px;
+    width: 1440px;
+    height: 64px;
+}
+
+/* MEDIA QUERY (medium) */
+/* MEDIA QUERY (large) */
+/* MEDIA QUERY (xl) */
+
+
+
+
+
