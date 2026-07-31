@@ -404,11 +404,6 @@ footer {
     width: 1440px;
     height: 64px;
 }
-.nav-links {
-    display: flex;
-    gap: 24px;
-    text-align: center;
-}
 
 .nav-links a {
     color: #FAF8F5;
