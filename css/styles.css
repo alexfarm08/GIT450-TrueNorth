@@ -234,7 +234,7 @@ header nav a:hover {
 .hero {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("Images/photos/a702d4d4a2b28ab348ff8c76234b4c7b377d9944.jpg");
+        url("../Images/photos/a702d4d4a2b28ab348ff8c76234b4c7b377d9944.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -396,7 +396,7 @@ header nav a:hover {
     height: 100%;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("Images/photos/789a2af90e90fdace0bf635124c6075b5ce88af9.jpg");
+        url("../Images/photos/789a2af90e90fdace0bf635124c6075b5ce88af9.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -410,7 +410,7 @@ header nav a:hover {
     height: 100%;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("Images/photos/flag.jpg");
+        url("../Images/photos/flag.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -424,7 +424,7 @@ header nav a:hover {
     height: 100%;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("Images/photos/dog.jpg");
+        url("../Images/photos/dog.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -438,7 +438,7 @@ header nav a:hover {
     height: 100%;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("Images/photos/photo-rock.jpg");
+        url("../Images/photos/photo-rock.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -575,7 +575,7 @@ header nav a:hover {
 
 #artist-img-wrap {
     position: relative;
-    order: 2;
+    order: 1;
     flex: 1;
     width: 50%;
     height: 100%;
@@ -607,7 +607,7 @@ header nav a:hover {
 }
 
 #artist-section .right-content {
-    order: 1; /* scoped override — doesn't affect .right-content in your other 2 photo-left sections */
+    order: 2; /* scoped override — doesn't affect .right-content in your other 2 photo-left sections */
 }
 
 #last-quote {
