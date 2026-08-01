@@ -540,8 +540,405 @@ header nav a:hover {
     white-space: nowrap;
 }
 
+/*=======
+   Hero
+=========================== */
 
-  /* ===========================
+.hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/Images/photos/a702d4d4a2b28ab348ff8c76234b4c7b377d9944.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 837px;
+    display: flex;
+    align-items: flex-end;   /* was center */
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    letter-spacing: 0%;
+    font-weight: 400;
+    line-height: 100%;
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+#hero-btn {
+    padding: 14px 32px;
+    background: var(--white);
+    color: #6B331E;
+    border: 1px solid #6B331E;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#hero-btn:hover {
+    background: var(--canyon-100);
+}
+
+
+/* ===========================
+   new releases
+=========================== */
+
+.new-releases {
+    display: flex;
+    align-items: stretch; /* makes both children match the section's full height */
+    height: 650px;
+}
+
+.releases-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.releases-content p:first-child {
+    font-size: 16px;
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    line-height: 100%;
+    color: #6B331E;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.releases-content h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: #2C3820;
+    margin-bottom: 16px;
+}
+
+.releases-content > p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #2C3820;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+.image-wrap {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--white) 0%, transparent 30%);
+    pointer-events: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 40px;
+    border: 1px solid #6B331E;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #6B331E;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+}
+
+
+/* ===========================
+   every wall
+=========================== */
+
+
+.every-wall {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.photo-background {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("Images/photos/789a2af90e90fdace0bf635124c6075b5ce88af9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photo-background2 {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("Images/photos/flag.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photo-background3 {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("Images/photos/dog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photo-background4 {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("Images/photos/photo-rock.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wall-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--white);
+    padding: 40px;
+}
+
+.wall-content p:first-child {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: var(--font-body);
+    color: var(--white);
+}
+
+.wall-content h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white);
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.wall-content p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 28px;
+}
+
+.btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 40px;
+    border: 1px solid var(--white);
+    padding: 10px 16px;
+    text-decoration: none;
+    color: var(--white);
+    background: transparent;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+}
+
+/* ===========================
+   photo left side cards
+=========================== */
+
+#artist-section {
+    min-height: 480px;
+}
+
+#field {
+    padding: 24px;
+    background: var(--white);
+    box-sizing: border-box;
+}
+
+.photo-left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    min-height: 650px;
+}
+
+.photo-left img {
+    order: 2;
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-content {
+    order: 1;
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.right-content p:first-child {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.right-content h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.right-content p:nth-of-type(2) {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+/* ===========================
+   circle section
+=========================== */
+
+#artist-section {
+    flex-direction: row; /* overrides the shared .photo-left row-reverse, only for this section */
+}
+
+#artist-img-wrap {
+    position: relative;
+    order: 2;
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+#artist-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% center; 
+    display: block;
+}
+
+#artist-img-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        ellipse 70% 70% at 40% 60%,
+        transparent 10%,
+        rgba(255, 255, 255, 0.4) 45%,
+        rgba(255, 255, 255, 0.8) 65%,
+        var(--white) 85%
+    );
+    pointer-events: none;
+}
+
+#artist-section .right-content {
+    order: 1; /* scoped override — doesn't affect .right-content in your other 2 photo-left sections */
+}
+
+#last-quote {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+#artist-name {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+/* ===========================
    FOOTER
 =========================== */
 
@@ -559,7 +956,7 @@ footer {
 .footer-sub {
     background-color: var(--canyon-500);
     color: var(--white);
-    padding: 48px 40px;
+    padding: 24px 40px 40px;
 }
 
 .footer-sub .footer-container {
