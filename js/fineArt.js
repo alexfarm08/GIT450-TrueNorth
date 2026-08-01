@@ -1,7 +1,7 @@
 const productDisplay = document.querySelector('.product-display');
 
 const products = Array.from({ length: 30 }, (_, i) => ({
-    image: `/Images/photos/product.jpg`,
+    image: `../Images/photos/product.jpg`,
     name: 'Piece Name',
     location: 'Location Name, State/Province',
     price: '$995'
