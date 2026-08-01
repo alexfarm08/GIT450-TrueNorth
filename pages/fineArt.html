@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
+    <meta name="robots" content="index, follow">
+    <title>True North | Fine Art</title>
+    <link rel="stylesheet" href="/css/fineArt.css">
+    <!-- Link to the svgs for socials -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Images/logos/logo_white.png" alt="True North logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">FINE ART</a></li>
+                    <li><a href="#">INSPIRATION</a></li>
+                    <li><a href="#">THE ARTIST</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button type="button" aria-label="Search" class="icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button type="button" aria-label="Shopping cart" class="icon-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button type="button" aria-label="Open menu" class="icon-btn" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero"></section>
+        <section class="product-find">
+            <div class="frame-sec">
+                <h1>Fine Art</h1>
+                <div class="frame-preview">
+                    <p>Frame Preview</p>
+                    <div class="frame-imgs">
+                        <img src="/Images/frame/brown.png" alt="frame Preview">
+                        <img src="/Images/frame/darkBrown.png" alt="frame Preview">
+                        <img src="/Images/frame/gold.png" alt="frame Preview">
+                        <img src="/Images/frame/gold2.png" alt="frame Preview">
+                        <img src="/Images/frame/gold3.png" alt="frame Preview">
+                    </div>
+                </div>
+            </div>
+            <div class="fil-sec">
+                <form id="filter-form">
+                    <div class="filter-group">
+                        <label for="collection-filter">Collection</label>
+                        <select id="collection-filter" name="collection">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="location-filter">Location</label>
+                        <select id="location-filter" name="location">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="orientation-filter">Orientation</label>
+                        <select id="orientation-filter" name="orientation">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="format-filter">Format</label>
+                        <select id="format-filter" name="format">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-sub">
+            <div class="footer-container">
+                <section class="footer-sub-content">
+                    <h2>Subscribe to our field notes</h2>
+                    <p>New editions sell out fast. Subscribers get early access to limited releases, field notes from the trail, and the occasional tip on where to point your boots next</p>
+                </section>
+                <section class="footer-sub-form">
+                    <form id="newsletter-form">
+                        <label for="sub-email">PRO TIPS, NEW EDITIONS, FIRST LOOKS, AND MUCH MORE!</label>
+                        <input type="email" id="sub-email" name="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>By submitting this form, you are consenting to receive occasional promotions and updates. Information will be processed in accordance with our <a href="#" id="privacy-link">Privacy Policy</a>. You can unsubscribe at any time</p>
+                </section>
+            </div>
+        </section>
+        <section id="footer-links">
+            <div class="footer-container">
+                <section id="footer-social">
+                    <img src="/Images/logos/logo_white.png" alt="True North logo" class="logo">
+                    <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in story, built to last.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://pinterest.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </section>
+                <nav class="footer-discover" aria-labelledby="discover-heading">
+                    <h3 id="discover-heading">DISCOVER</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Conservation</a></li>
+                        <li><a href="#" class="footer-link">Field Guide (Blog)</a></li>
+                        <li><a href="#" class="footer-link">Inspiration</a></li>
+                        <li><a href="#" class="footer-link">The Process</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-designers" aria-labelledby="designers-heading">
+                    <h3 id="designers-heading">FOR DESIGNERS</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Trade Account</a></li>
+                        <li><a href="#" class="footer-link">Look Book</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-sales" aria-labelledby="sales-heading">
+                    <h3 id="sales-heading">SALES</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Gift Cards</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-support" aria-labelledby="support-heading">
+                    <h3 id="support-heading">SUPPORT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Care &amp; Handling</a></li>
+                        <li><a href="#" class="footer-link">Hanging Guidelines</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-account" aria-labelledby="account-heading">
+                    <h3 id="account-heading">ACCOUNT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Log in</a></li>
+                        <li><a href="#" class="footer-link">Create Account</a></li>
+                        <li><a href="#" class="footer-link">Order History</a></li>
+                        <li><a href="#" class="footer-link">Affirm Financing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="footer-terms">
+            <div class="footer-container">
+                <section id="term-links">
+                    <p><a href="#">Privacy Policy</a>    |    <a href="#">Terms of Use</a>    |    <a href="#">Terms of Sale</a>    |    <a href="#">GDPR Compliance</a>    |    <a href="#">CCPA-CPRA Compliance</a>    |    <a href="#">Accessibility Statement</a></p>
+                </section>
+                <section id="term-payment">
+                    <h4>SECURE PAYMENT</h4>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
