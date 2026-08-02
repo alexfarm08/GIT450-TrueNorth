@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
     <meta name="robots" content="index, follow">
-    <title>True North | Fine Art</title>
-    <link rel="stylesheet" href="../css/fineArt.css">
-    <script src="../js/fineArt.js" defer></script>
+    <title>True North | Inspiration</title>
+    <link rel="stylesheet" href="../css/inspiration.css">
     <!-- Link to the svgs for socials -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -18,8 +17,8 @@
             <nav>
                 <ul>
                     <li><a href="#">FINE ART</a></li>
-                    <li><a href="inspiration.html">INSPIRATION</a></li>
-                    <li><a href="../theartist.html">THE ARTIST</a></li>
+                    <li><a href="#">INSPIRATION</a></li>
+                    <li><a href="#">THE ARTIST</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
@@ -38,72 +37,50 @@
     </header>
     <main>
         <section class="hero"></section>
-        <section class="product-find">
-            <div class="frame-sec">
-                <h1>Fine Art</h1>
-                <div class="frame-preview">
-                    <p>Frame Preview</p>
-                    <div class="frame-imgs">
-                        <img src="../Images/frame/brown.png" alt="frame Preview">
-                        <img src="../Images/frame/darkBrown.png" alt="frame Preview">
-                        <img src="../Images/frame/gold.png" alt="frame Preview">
-                        <img src="../Images/frame/gold2.png" alt="frame Preview">
-                        <img src="../Images/frame/gold3.png" alt="frame Preview">
-                    </div>
-                </div>
-            </div>
-            <div class="fil-sec">
-                <form id="filter-form">
-                    <div class="filter-group">
-                        <label for="collection-filter">Collection</label>
-                        <select id="collection-filter" name="collection">
-                            <option value="">All</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="location-filter">Location</label>
-                        <select id="location-filter" name="location">
-                            <option value="">All</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="orientation-filter">Orientation</label>
-                        <select id="orientation-filter" name="orientation">
-                            <option value="">All</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="format-filter">Format</label>
-                        <select id="format-filter" name="format">
-                            <option value="">All</option>
-                        </select>
-                    </div>
-                </form>
+        <section id="inspiration">
+            <div id="inspiration-content">
+                <p>Inspiration</p>
+                <h1>Art for Every Wall</h1>
+                <p>Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.</p>
             </div>
         </section>
-        <section class="product-display"></section>
-        <section class="page-switch">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <span>...</span>
-            <a href="#">5</a>
-            <a href="#" aria-label="Next page"><i class="fa-solid fa-arrow-right"></i></a>
-        </section>
-        <section class="new-releases">
-            <div class="releases-content">
-                <p>LATEST WORK FROM THE FIELD</p>
-                <H2>New Releases</H2>
-                <p>Limited-edition prints from our most recent expeditions. Each image is capped at 50 prints.</p>
-                <a href="#" class="btn">EXPLORE NEW ARRIVALS
+        <section class="photo-left" id="artist-section">
+            <div id="artist-img-wrap">
+                <img src="../Images/photos/office.jpg" alt="No img yet">
+            </div>
+            <div class="right-content">
+                <p>corporate sales</p>
+                <h2>Elevate your Office</h2>
+                <p>Leave a lasting impression on clients and visitors. Beautiful art can speak volumes about your business by displaying these impressive works of fine art in highly visible locations. Convey your company’s mission and evoke a positive energy with a large-format True North Print</p>
+                <a href="#" class="btn">Contact Sales
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="image-wrap">
-                <img src="../Images/photos/7047e57b7ac0b61f24eeb110b6696ec1ea2cc070.jpg" alt="stock img of clifs">
+        </section>
+        <section id="call-to-action">
+            <div class="card" id="card1">
+                <img alt="need vector imgs">
+                <h3>Direct from the artist</h3>
+                <p>Every purchase goes straight to the people who made the work. No gallery, no middleman.</p>
+                <a>MEET THE ARTISTS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card2">
+                <img alt="need vector imgs">
+                <h3>Limited edition</h3>
+                <p>Each image is capped at 50 prints. All prints are insured during delivery.</p>
+                <a>VIEW SHIPPING FAQS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card3">
+                <img alt="need vector imgs">
+                <h3>Solid wood frames</h3>
+                <p>Hand-built in the USA from solid wood. Crafted to cradle your print, and built to last.</p>
+                <a>SEE OUR PROCESS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card4">
+                <img alt="need vector imgs">
+                <h3>Ready to hang</h3>
+                <p>Your print ships fully assembled mounting hardware included. Need help? Give us a call.</p>
+                <a>CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
