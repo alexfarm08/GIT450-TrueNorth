@@ -250,7 +250,6 @@ header nav a:hover {
     position: relative;
     width: 860px;
     height: 860px;
-    overflow: hidden;
     background-color: var(--mesa-100);
 }
 
@@ -321,7 +320,7 @@ header nav a:hover {
 .product-ar-action {
     position: absolute;
     left: 50%;
-    bottom: 18px;
+    bottom: -21px;
     z-index: 10;
     transform: translateX(-50%);
 }
