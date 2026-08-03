@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
+    <meta name="description"
+        content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
     <meta name="robots" content="index, follow">
     <title>True North | Product description</title>
     <link rel="stylesheet" href="../css/pdpStandardHorizontal.css">
@@ -11,6 +13,7 @@
     <!-- Link to the svgs for socials -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -37,14 +40,195 @@
         </div>
     </header>
     <main>
+        <section id="product-detail">
+            <div class="product-detail-container">
+                <section class="product-gallery" aria-label="Product image gallery">
+                    <!-- Main artwork area -->
+                    <div class="product-main-image">
+                        <img id="product-main-image" src="../Images/photos/product.jpg"
+                            alt="Canyon cliffs facing a beach shore">
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="product-thumbnails" aria-label="Choose a product image">
 
+                        <button class="product-thumbnail active" type="button" data-image="../Images/photos/product.jpg"
+                            aria-label="View the artwork" aria-pressed="true">
+                            <img src="../Images/photos/product.jpg" alt="product image">
+                        </button>
+
+                        <button class="product-thumbnail" type="button" data-image="../Images/photos/product.jpg"
+                            aria-label="View the artwork in a room" aria-pressed="false">
+                            <img src="../Images/photos/product.jpg" alt="product image">
+                        </button>
+
+                    </div>
+                    <!-- AR button -->
+                    <div class="product-ar-action">
+                        <!-- Existing AR button goes here -->
+                        <button id="open-ar-modal" class="ar-button" type="button">
+                            <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                            <span>View in Room</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- Existing product information goes here -->
+                <section id="product-info">
+                    <div class="product-info-container">
+
+                        <section class="product-heading">
+                            <h1>A Secret Place</h1>
+                            <p>Mount Washington Wilderness, Oregon</p>
+                        </section>
+
+                        <!-- Edition availability -->
+                        <section class="edition-status">
+                            <div class="edition-progress" role="progressbar" aria-label="Limited-edition availability"
+                                aria-valuemin="0" aria-valuemax="50" aria-valuenow="38">
+                                <span class="edition-progress-fill"></span>
+                            </div>
+
+                            <h2>12 OF 50 EDITIONS REMAINING</h2>
+                            <p>76% sold &bull; Limited edition &bull; Editions close permanently when sold out</p>
+                        </section>
+                        <!-- Product configuration -->
+                        <form id="product-options">
+
+                            <!-- Size selector -->
+                            <fieldset class="product-option-group size-options">
+                                <legend>SELECT SIZE</legend>
+
+                                <div class="size-option-grid">
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="studio">
+                                        <span>Studio</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="gallery" checked>
+                                        <span>Gallery</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="statement">
+                                        <span>Statement</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="collector">
+                                        <span>Collector</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Frame selector -->
+                            <fieldset class="product-option-group frame-options">
+                                <legend>SELECT FRAME</legend>
+
+                                <div class="frame-option-grid">
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="float-mount" checked>
+
+                                        <span class="frame-option-content">
+                                            <strong>Float Mount</strong>
+                                            <small>Modern, frameless look</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="black-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Black Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="gray-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Gray Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="brown-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Brown Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Liner selector -->
+                            <fieldset class="product-option-group liner-options">
+                                <legend>SELECT LINER</legend>
+
+                                <div class="liner-option-grid">
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="none" checked>
+                                        <span>No Liner</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="white">
+                                        <span>White Liner</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="black">
+                                        <span>Black Liner</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Dimensions -->
+                            <section class="product-dimensions" aria-live="polite">
+                                <h2>OVERALL DIMENSIONS</h2>
+                                <p>Gallery: 24in &times; 18in (60.96cm &times; 45.72cm)</p>
+                            </section>
+
+                            <!-- Price -->
+                            <section class="product-purchase">
+                                <div class="product-price">
+                                    <span class="sr-only">Price:</span>
+                                    <p>$995</p>
+                                </div>
+
+                                <div class="product-financing">
+                                    <p>
+                                        Starting at $300/mo or 0% APR with Affirm.
+                                        <a href="#">See if you qualify</a>
+                                    </p>
+                                </div>
+                            </section>
+
+                            <!-- Cart button -->
+                            <button class="add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+
+                            <p class="product-contact">
+                                <a href="#">Not Sure? Contact an art specialist</a>
+                            </p>
+
+                        </form>
+
+                    </div>
+                </section>
+            </div>
+        </section>    
     </main>
     <footer>
         <section class="footer-sub">
             <div class="footer-container">
                 <section class="footer-sub-content">
                     <h2>Subscribe to our field notes</h2>
-                    <p>New editions sell out fast. Subscribers get early access to limited releases, field notes from the trail, and the occasional tip on where to point your boots next</p>
+                    <p>New editions sell out fast. Subscribers get early access to limited releases, field notes from
+                        the trail, and the occasional tip on where to point your boots next</p>
                 </section>
                 <section class="footer-sub-form">
                     <form id="newsletter-form">
@@ -52,7 +236,9 @@
                         <input type="email" id="sub-email" name="email" placeholder="Your email address" required>
                         <button type="submit">Subscribe</button>
                     </form>
-                    <p>By submitting this form, you are consenting to receive occasional promotions and updates. Information will be processed in accordance with our <a href="#" id="privacy-link">Privacy Policy</a>. You can unsubscribe at any time</p>
+                    <p>By submitting this form, you are consenting to receive occasional promotions and updates.
+                        Information will be processed in accordance with our <a href="#" id="privacy-link">Privacy
+                            Policy</a>. You can unsubscribe at any time</p>
                 </section>
             </div>
         </section>
@@ -60,18 +246,23 @@
             <div class="footer-container">
                 <section id="footer-social">
                     <img src="../Images/logos/logo_white.png" alt="True North logo" class="logo">
-                    <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in story, built to last.</p>
+                    <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in
+                        story, built to last.</p>
                     <div class="social-links">
-                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="https://pinterest.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                        <a href="https://pinterest.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Pinterest">
                             <i class="fa-brands fa-pinterest"></i>
                         </a>
                     </div>
@@ -122,7 +313,10 @@
         <section id="footer-terms">
             <div class="footer-container">
                 <section id="term-links">
-                    <p><a href="#">Privacy Policy</a>    |    <a href="#">Terms of Use</a>    |    <a href="#">Terms of Sale</a>    |    <a href="#">GDPR Compliance</a>    |    <a href="#">CCPA-CPRA Compliance</a>    |    <a href="#">Accessibility Statement</a></p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Terms of Sale</a> |
+                        <a href="#">GDPR Compliance</a> | <a href="#">CCPA-CPRA Compliance</a> | <a
+                            href="#">Accessibility Statement</a>
+                    </p>
                 </section>
                 <section id="term-payment">
                     <h4>SECURE PAYMENT</h4>
@@ -138,5 +332,30 @@
             </div>
         </section>
     </footer>
+    <section id="ar-modal" class="ar-modal" aria-hidden="true">
+
+        <div class="ar-dialog">
+
+            <button id="close-ar-modal" class="ar-close" aria-label="Close">
+                &times;
+            </button>
+
+            <h2>View in Your Space</h2>
+
+            <p class="ar-description">
+                Scan this QR code with your phone to preview
+                the artwork in augmented reality.
+            </p>
+
+            <img src="../Images/qrCodes/mywebAR-QR.png" alt="QR Code for AR Experience" class="ar-qr">
+
+            <a href="https://mywebar.com/p/Project_1_dloldn2drr" class="ar-launch" target="_blank" rel="noopener">
+                Open Camera Preview
+            </a>
+
+        </div>
+
+    </section>
 </body>
+
 </html>
