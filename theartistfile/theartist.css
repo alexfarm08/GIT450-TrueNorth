@@ -419,16 +419,28 @@ footer {
 
 #artist-main{
     display: flex;
-    width: 732px;
-    height: 838px;
-    padding: 317px 133px 317px 188px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 80px;
+    width: 100%;
 }
-#artist-header{
 
+#artist-header {
+    flex: 1;
 }
+
+#artist-picture {
+    flex: 1;
+}
+
+.artist-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+   
 /* MEDIA QUERY (medium) */
 /* MEDIA QUERY (large) */
 /* MEDIA QUERY (xl) */
