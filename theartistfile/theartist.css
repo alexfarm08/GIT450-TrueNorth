@@ -397,26 +397,65 @@ footer {
 /* GLOBAL STYLES*/
 
 /*nav*/
-#main-nav {
+header {
     background-color: var(--alpine-700);
-    color: var(--mesa-50);
-    padding: 16px 40px;
-    width: 1440px;
+    color: var(--white);
     height: 64px;
+    padding: 0 40px;
 }
 
-.nav-links a {
-    color: #FAF8F5;
-    font-family: "Work Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 101px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+header nav a {
+    color: var(--white);
     text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
+header nav a:hover {
+    color: var(--alpine-200);
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--white);
+    padding: 4px;
+}
+
+.icon-btn:hover {
+    color: var(--alpine-200);
+}
 #artist-main{
     display: flex;
     flex-direction: row;
