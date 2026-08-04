@@ -163,6 +163,287 @@ table {
     font-display: swap;
   }
 
+
+  /* ===========================
+   header
+=========================== */
+
+  header {
+    background-color: var(--alpine-700);
+    color: var(--white);
+    height: 64px;
+    padding: 0 40px;
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 101px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover {
+    color: var(--alpine-200);
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--white);
+    padding: 4px;
+}
+
+.icon-btn:hover {
+    color: var(--alpine-200);
+}
+
+/* ===========================
+   new releases
+=========================== */
+
+.new-releases {
+    display: flex;
+    align-items: stretch; /* makes both children match the section's full height */
+    height: 650px;
+}
+
+.releases-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.releases-content p:first-child {
+    font-size: 16px;
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    line-height: 100%;
+    color: #6B331E;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.releases-content h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: #2C3820;
+    margin-bottom: 16px;
+}
+
+.releases-content > p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #2C3820;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+.image-wrap {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--white) 0%, transparent 30%);
+    pointer-events: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 40px;
+    border: 1px solid #6B331E;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #6B331E;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+}
+
+/*********************
+INSPIRATION SEC
+*********************/
+
+#inspiration {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#inspiration h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--alpine-700);
+    margin-bottom: 16px;
+}
+
+#inspiration p:first-of-type {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height:150%;
+    color: var(--alpine-700);
+    max-width: 411px;
+}
+
+/*********************
+HERO SEC
+*********************/
+
+.hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../Images/photos/photo-rock.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
+    display: flex;
+    padding: 40px;
+}
+
+/* ===========================
+   photo left side cards
+=========================== */
+
+#artist-section {
+    min-height: 480px;
+}
+
+#field {
+    padding: 24px;
+    background: var(--white);
+    box-sizing: border-box;
+}
+
+.photo-left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    min-height: 650px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.photo-left img {
+    order: 2;
+    flex: 1;
+    width: 519px;
+    height: 613px;
+    object-fit: cover;
+}
+
+.right-content {
+    order: 1;
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.right-content p:first-child {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.right-content h2 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.right-content p:nth-of-type(2) {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+.social-links-page {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.social-links-page a {
+    color: var(--alpine-700);
+    font-size: 24px;
+}
+
+.social-links-page a:hover {
+    color: var(--canyon-100);
+}
+
   /* ===========================
    FOOTER
 =========================== */
@@ -396,89 +677,7 @@ footer {
 
 /* GLOBAL STYLES*/
 
-/*nav*/
-header {
-    background-color: var(--alpine-700);
-    color: var(--white);
-    height: 64px;
-    padding: 0 40px;
-}
 
-.header-container {
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo {
-    width: 101px;
-    height: auto;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
-}
-
-header nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-header nav a:hover {
-    color: var(--alpine-200);
-}
-
-.nav-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.icon-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: var(--white);
-    padding: 4px;
-}
-
-.icon-btn:hover {
-    color: var(--alpine-200);
-}
-#artist-main{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
-    padding: 80px;
-    width: 100%;
-}
-
-#artist-header {
-    flex: 1;
-}
-
-#artist-picture {
-    flex: 1;
-}
-
-.artist-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
    
 /* MEDIA QUERY (medium) */
 /* MEDIA QUERY (large) */
