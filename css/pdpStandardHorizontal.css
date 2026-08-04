@@ -345,12 +345,13 @@ header nav a:hover {
     padding: 10px 16px;
     background-color: var(--white);
     color: var(--canyon-700);
-    border: 1px solid var(--canyon-700);
+    border: none;
     border-radius: 7px;
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 500;
     line-height: 1;
+    box-shadow: 2px 7px 9px rgba(0,0,0,0.3);
     cursor: pointer;
 }
 
@@ -909,7 +910,7 @@ product and card SEC
 }
 
 .product-card .product-location {
-    font-size: 16px;
+    font-size: 12px;
     color: var(--alpine-700);
     font-weight: 400;
     margin-bottom: 8px;
