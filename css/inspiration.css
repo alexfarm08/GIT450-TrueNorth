@@ -513,6 +513,28 @@ INSPIRATION SEC
     max-width: 411px;
 }
 
+.every-wall {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.photo-background {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../Images/photos/hills.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 /*********************
 OFFICE SEC
 *********************/

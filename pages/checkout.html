@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
+    <meta name="robots" content="index, follow">
+    <title>True North | Inspiration</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <!-- Link to the svgs for socials -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="home-link" href="../index.html"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="fineArt.html">FINE ART</a></li>
+                    <li><a href="#">INSPIRATION</a></li>
+                    <li><a href="../theartist.html">THE ARTIST</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button type="button" aria-label="Search" class="icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button type="button" aria-label="Shopping cart" class="icon-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button type="button" aria-label="Open menu" class="icon-btn" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+<main>
+    <h1>Checkout</h1>
+
+    <h2>status bar goes here</h2> 
+
+    <div class="checkout">
+
+        <!--left side-->
+        <section class="shipping">
+        
+            <h2>Shipping Information</h2>
+            <p>Enter your Shipping details below.</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="apt">Apartment, suite, etc.</label>
+                    <input type="text" id="apt" name="apt">
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">Zipcode</label>
+                        <input type="text" id="zip" name="zip">
+                    </div>
+                </div>
+
+                <h2>Shipping Method</h2>
+
+                <div class="ship-options">
+
+                    <label class="option">
+                        <input type="radio" name="shipping">
+                        <div>
+                            <strong>Standard Shipping</strong>
+                            <p>3-5 Business Days</p>
+                        </div>
+                        <span>$14.99</span>
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="shipping">
+                        <div>
+                            <strong>Expedited Shipping</strong>
+                            <p>1-2 Business Days</p>
+                        </div>
+                        <span>$39.99</span>
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="shipping">
+                        <div>
+                            <strong>Overnight Shipping</strong>
+                            <p>1 Business Day</p>
+                        </div>
+                        <span>$39.99</span>
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <!--right side-->
+        <aside class="summary">
+            <h2>Your Order</h2>
+
+            <div class="product">
+                <img src="temp" alt="temp">
+
+                <div>
+                    <h3>Temp Text</h3>
+                    <p>Temp.</p>
+                    <p>Temp.</p>
+                    <p>Temp.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="price">
+                <span>Subtotal</span>
+                <span>$000</span>
+            </div>
+
+            <div class="price">
+                <span>Shipping</span>
+                <span>$000</span>
+            </div>
+
+            <div class="price">
+                <span>Tax</span>
+                <span>$000</span>
+            </div>
+            <hr>
+            <div class="price-total">
+                <span>Total</span>
+                <span>$1000</span>
+            </div>
+
+            <button>Continue to Payment →</button>
+        </aside>
+    </div>
+
+</main>
+<footer>
+        <section class="footer-sub">
+            <div class="footer-container">
+                <section class="footer-sub-content">
+                    <h2>Subscribe to our field notes</h2>
+                    <p>New editions sell out fast. Subscribers get early access to limited releases, field notes from the trail, and the occasional tip on where to point your boots next</p>
+                </section>
+                <section class="footer-sub-form">
+                    <form id="newsletter-form">
+                        <label for="sub-email">PRO TIPS, NEW EDITIONS, FIRST LOOKS, AND MUCH MORE!</label>
+                        <input type="email" id="sub-email" name="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>By submitting this form, you are consenting to receive occasional promotions and updates. Information will be processed in accordance with our <a href="#" id="privacy-link">Privacy Policy</a>. You can unsubscribe at any time</p>
+                </section>
+            </div>
+        </section>
+        <section id="footer-links">
+            <div class="footer-container">
+                <section id="footer-social">
+                    <a class="home-link" href="../index.html"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
+                    <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in story, built to last.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://pinterest.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </section>
+                <nav class="footer-discover" aria-labelledby="discover-heading">
+                    <h3 id="discover-heading">DISCOVER</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Conservation</a></li>
+                        <li><a href="#" class="footer-link">Field Guide (Blog)</a></li>
+                        <li><a href="#" class="footer-link">Inspiration</a></li>
+                        <li><a href="#" class="footer-link">The Process</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-designers" aria-labelledby="designers-heading">
+                    <h3 id="designers-heading">FOR DESIGNERS</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Trade Account</a></li>
+                        <li><a href="#" class="footer-link">Look Book</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-sales" aria-labelledby="sales-heading">
+                    <h3 id="sales-heading">SALES</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Gift Cards</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-support" aria-labelledby="support-heading">
+                    <h3 id="support-heading">SUPPORT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Care &amp; Handling</a></li>
+                        <li><a href="#" class="footer-link">Hanging Guidelines</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-account" aria-labelledby="account-heading">
+                    <h3 id="account-heading">ACCOUNT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Log in</a></li>
+                        <li><a href="#" class="footer-link">Create Account</a></li>
+                        <li><a href="#" class="footer-link">Order History</a></li>
+                        <li><a href="#" class="footer-link">Affirm Financing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="footer-terms">
+            <div class="footer-container">
+                <section id="term-links">
+                    <p><a href="#">Privacy Policy</a>    |    <a href="#">Terms of Use</a>    |    <a href="#">Terms of Sale</a>    |    <a href="#">GDPR Compliance</a>    |    <a href="#">CCPA-CPRA Compliance</a>    |    <a href="#">Accessibility Statement</a></p>
+                </section>
+                <section id="term-payment">
+                    <h4>SECURE PAYMENT</h4>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
