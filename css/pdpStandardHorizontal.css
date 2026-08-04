@@ -931,13 +931,14 @@ CALL TO ACTION SEC
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 16px;
     padding: 0 40px;
+    background-color: var(--white);
 }
 
 .card {
     flex: 1;
-    max-width: 260px;
+    max-width: 247px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -966,6 +967,7 @@ CALL TO ACTION SEC
     color: var(--alpine-700);
     font-weight: 400;
     margin-bottom: 16px;
+    width: 252px;
 }
 
 .card a {
