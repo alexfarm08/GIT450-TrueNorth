@@ -237,8 +237,8 @@ header nav a:hover {
 
 .product-detail-container {
     display: grid;
-    grid-template-columns: 860px 580px;
-    width: 1440px;
+    grid-template-columns: 860px auto;
+    max-width: 1440px;
     min-height: 860px;
     margin: 0 auto;
 }
@@ -752,6 +752,237 @@ header nav a:hover {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+/* ===========================
+   EXPLORE MORE PRINTS
+=========================== */
+
+#explore-more {
+    width: 100%;
+    padding: 72px 40px 84px;
+    background-color: var(--mesa-50);
+    color: var(--alpine-700);
+    font-family: var(--font-body);
+}
+
+.explore-more-container {
+    width: 100%;
+    max-width: 1062px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   SECTION HEADER
+=========================== */
+
+.explore-more-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 36px;
+}
+
+.explore-more-heading {
+    min-width: 0;
+}
+
+.explore-more-eyebrow {
+    margin-bottom: 10px;
+    color: var(--canyon-700);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.explore-more-heading h2 {
+    color: var(--alpine-700);
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 4vw, 64px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* ===========================
+   COLLECTION LINK
+=========================== */
+
+.collection-link {
+    display: inline-flex;
+    min-width: 230px;
+    min-height: 50px;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    padding: 14px 18px;
+
+    color: var(--canyon-700);
+    background-color: transparent;
+
+    border: 1px solid var(--canyon-700);
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+/* ===========================
+   PRODUCT GRID
+=========================== */
+
+.explore-more-grid {
+    display: grid;
+
+    /*
+      Four columns at desktop width.
+      If space becomes tighter, cards wrap naturally
+      without requiring a media query.
+    */
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 24px;
+}
+/*********************
+product and card SEC
+*********************/
+
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.product-card a{
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--alpine-700);
+    margin-bottom: 4px;
+}
+
+.print-card-image-link {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--mesa-100);
+    text-decoration: none;
+}
+
+.print-card-image {
+    display: block;
+    width: 100%;
+    /*
+      Keeps all four images visually consistent.
+      The image area remains square like the Figma.
+    */
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.product-card .product-name {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--alpine-700);
+    margin-bottom: 4px;
+}
+
+.product-card .product-location {
+    font-size: 16px;
+    color: var(--alpine-700);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.product-card .product-price {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--alpine-700);
+}
+
+/*********************
+CALL TO ACTION SEC
+*********************/
+
+#call-to-action {
+    height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.card {
+    flex: 1;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    height: 99px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--alpine-700);
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--alpine-700);
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.card a {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--canyon-700);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card a:hover {
+    color: var(--canyon-900);
+}
+
+
+
 /* ===========================
    FOOTER
 =========================== */
