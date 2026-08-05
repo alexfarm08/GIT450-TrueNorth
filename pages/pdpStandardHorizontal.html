@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
+    <meta name="robots" content="index, follow">
+    <title>True North | Product description</title>
+    <link rel="stylesheet" href="../css/pdpStandardHorizontal.css">
+    <script src="../js/pdpStandardHorizontal.js" defer></script>
+    <!-- Link to the svgs for socials -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../Images/logos/logo_white.png" alt="True North logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="fineArt.html">FINE ART</a></li>
+                    <li><a href="inspiration.html">INSPIRATION</a></li>
+                    <li><a href="theartist.html">THE ARTIST</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button type="button" aria-label="Search" class="icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button type="button" aria-label="Shopping cart" class="icon-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button type="button" aria-label="Open menu" class="icon-btn" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="product-detail">
+            <div class="product-detail-container">
+                <section class="product-gallery" aria-label="Product image gallery">
+                    <!-- Main artwork area -->
+                    <div class="product-main-image">
+                        <img id="product-main-image" src="../Images/photos/product.jpg"
+                            alt="Canyon cliffs facing a beach shore">
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="product-thumbnails" aria-label="Choose a product image">
+
+                        <button class="product-thumbnail active" type="button" data-image="../Images/photos/product.jpg"
+                            aria-label="View the artwork" aria-pressed="true">
+                            <img src="../Images/photos/product.jpg" alt="product image">
+                        </button>
+
+                        <button class="product-thumbnail" type="button" data-image="../Images/photos/product.jpg"
+                            aria-label="View the artwork in a room" aria-pressed="false">
+                            <img src="../Images/photos/product.jpg" alt="product image">
+                        </button>
+
+                    </div>
+                    <!-- AR button -->
+                    <div class="product-ar-action">
+                        <!-- Existing AR button goes here -->
+                        <button id="open-ar-modal" class="ar-button" type="button">
+                            <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                            <span>View in Room</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- Existing product information goes here -->
+                <section id="product-info">
+                    <div class="product-info-container">
+
+                        <section class="product-heading">
+                            <h1>A Secret Place</h1>
+                            <p>Mount Washington Wilderness, Oregon</p>
+                        </section>
+
+                        <!-- Edition availability -->
+                        <section class="edition-status">
+                            <div class="edition-progress" role="progressbar" aria-label="Limited-edition availability"
+                                aria-valuemin="0" aria-valuemax="50" aria-valuenow="38">
+                                <span class="edition-progress-fill"></span>
+                            </div>
+
+                            <h2>12 OF 50 EDITIONS REMAINING</h2>
+                            <p>76% sold &bull; Limited edition &bull; Editions close permanently when sold out</p>
+                        </section>
+                        <!-- Product configuration -->
+                        <form id="product-options">
+
+                            <!-- Size selector -->
+                            <fieldset class="product-option-group size-options">
+                                <legend>SELECT SIZE</legend>
+
+                                <div class="size-option-grid">
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="studio">
+                                        <span>Studio</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="gallery" checked>
+                                        <span>Gallery</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="statement">
+                                        <span>Statement</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="size" value="collector">
+                                        <span>Collector</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Frame selector -->
+                            <fieldset class="product-option-group frame-options">
+                                <legend>SELECT FRAME</legend>
+
+                                <div class="frame-option-grid">
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="float-mount" checked>
+
+                                        <span class="frame-option-content">
+                                            <strong>Float Mount</strong>
+                                            <small>Modern, frameless look</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="black-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Black Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="gray-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Gray Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="frame-option">
+                                        <input type="radio" name="frame" value="brown-frame">
+
+                                        <span class="frame-option-content">
+                                            <strong>Brown Frame</strong>
+                                            <small>Hand-built, solid wood</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Liner selector -->
+                            <fieldset class="product-option-group liner-options">
+                                <legend>SELECT LINER</legend>
+
+                                <div class="liner-option-grid">
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="none" checked>
+                                        <span>No Liner</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="white">
+                                        <span>White Liner</span>
+                                    </label>
+
+                                    <label class="option-button">
+                                        <input type="radio" name="liner" value="black">
+                                        <span>Black Liner</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Dimensions -->
+                            <section class="product-dimensions" aria-live="polite">
+                                <h2>OVERALL DIMENSIONS</h2>
+                                <p>Gallery: 24in &times; 18in (60.96cm &times; 45.72cm)</p>
+                            </section>
+
+                            <!-- Price -->
+                            <section class="product-purchase">
+                                <div class="product-price">
+                                    <span class="sr-only">Price:</span>
+                                    <p>$995</p>
+                                </div>
+
+                                <div class="product-financing">
+                                    <p>
+                                        Starting at $300/mo or 0% APR with Affirm.
+                                        <a href="#">See if you qualify</a>
+                                    </p>
+                                </div>
+                            </section>
+
+                            <!-- Cart button -->
+                            <button class="add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+
+                            <p class="product-contact">
+                                <a href="#">Not Sure? Contact an art specialist</a>
+                            </p>
+
+                        </form>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Insert Description / Dimensions / FAQ  component -->
+
+        <!-- Explore more prints section  -->
+        <section id="explore-more">
+            <div class="explore-more-container">
+
+                <!-- Section heading area -->
+                <div class="explore-more-header">
+
+                    <div class="explore-more-heading">
+                        <p class="explore-more-eyebrow">
+                            YOU MIGHT ALSO LIKE
+                        </p>
+
+                        <h2>Explore More Prints</h2>
+                    </div>
+
+                    <a class="collection-link" href="fineArt.html">
+                        <span>Shop the Collection</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+                <div class="explore-more-grid">
+                    <!-- Product cards go here from fineArt-->
+                    <article class="product-card">
+                        <a href="#"><img src="../Images/photos/image-placeholder.png" alt="Placeholder Image"></a>
+                        <h3 class="product-name"><a href="#">Piece Name</a></h3>
+                        <p class="product-location">Location Name, State/Provence</p>
+                        <p class="product-price">$2,400</p>
+                    </article>
+
+                    <article class="product-card">
+                        <a href="#"><img src="../Images/photos/image-placeholder.png" alt="Placeholder Image"></a>
+                        <h3 class="product-name"><a href="#">Piece Name</a></h3>
+                        <p class="product-location">Location Name, State/Provence</p>
+                        <p class="product-price">$2,400</p>
+                    </article>
+
+                    <article class="product-card">
+                        <a href="#"><img src="../Images/photos/image-placeholder.png" alt="Placeholder Image"></a>
+                        <h3 class="product-name"><a href="#">Piece Name</a></h3>
+                        <p class="product-location">Location Name, State/Provence</p>
+                        <p class="product-price">$2,400</p>
+                    </article>
+
+                    <article class="product-card">
+                        <a href="#"><img src="../Images/photos/image-placeholder.png" alt="Placeholder Image"></a>
+                        <h3 class="product-name"><a href="#">Piece Name</a></h3>
+                        <p class="product-location">Location Name, State/Provence</p>
+                        <p class="product-price">$2,400</p>
+                    </article>
+                </div>              
+            </div>
+        </section>
+        <!-- Import call to action component from inspiration page  -->
+        <section id="call-to-action">
+            <div class="card" id="card1">
+                <img src="../Images/svg/shield-hands.svg" alt="need vector imgs">  
+                <h3>Direct from the artist</h3>
+                <p>Every purchase goes straight to the people who made the work. No gallery, no middleman.</p>
+                <a>MEET THE ARTISTS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card2">
+                <img src="../Images/svg/Emblem.svg" alt="need vector imgs"> 
+                <h3>Limited edition</h3>
+                <p>Each image is capped at 50 prints. All prints are insured during delivery.</p>
+                <a>VIEW SHIPPING FAQS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card3">
+                <img src="../Images/svg/right-angle.svg" alt="need vector imgs"> 
+                <h3>Solid wood frames</h3>
+                <p>Hand-built in the USA from solid wood. Crafted to cradle your print, and built to last.</p>
+                <a>SEE OUR PROCESS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card" id="card4">
+                <img src="../Images/svg/tools.svg" alt="need vector imgs"> 
+                <h3>Ready to hang</h3>
+                <p>Your print ships fully assembled mounting hardware included. Need help? Give us a call.</p>
+                <a>CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-sub">
+            <div class="footer-container">
+                <section class="footer-sub-content">
+                    <h2>Subscribe to our field notes</h2>
+                    <p>New editions sell out fast. Subscribers get early access to limited releases, field notes from
+                        the trail, and the occasional tip on where to point your boots next</p>
+                </section>
+                <section class="footer-sub-form">
+                    <form id="newsletter-form">
+                        <label for="sub-email">PRO TIPS, NEW EDITIONS, FIRST LOOKS, AND MUCH MORE!</label>
+                        <input type="email" id="sub-email" name="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>By submitting this form, you are consenting to receive occasional promotions and updates.
+                        Information will be processed in accordance with our <a href="#" id="privacy-link">Privacy
+                            Policy</a>. You can unsubscribe at any time</p>
+                </section>
+            </div>
+        </section>
+        <section id="footer-links">
+            <div class="footer-container">
+                <section id="footer-social">
+                    <img src="../Images/logos/logo_white.png" alt="True North logo" class="logo">
+                    <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in
+                        story, built to last.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://pinterest.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </section>
+                <nav class="footer-discover" aria-labelledby="discover-heading">
+                    <h3 id="discover-heading">DISCOVER</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Conservation</a></li>
+                        <li><a href="#" class="footer-link">Field Guide (Blog)</a></li>
+                        <li><a href="#" class="footer-link">Inspiration</a></li>
+                        <li><a href="#" class="footer-link">The Process</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-designers" aria-labelledby="designers-heading">
+                    <h3 id="designers-heading">FOR DESIGNERS</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Trade Account</a></li>
+                        <li><a href="#" class="footer-link">Look Book</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-sales" aria-labelledby="sales-heading">
+                    <h3 id="sales-heading">SALES</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Gift Cards</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-support" aria-labelledby="support-heading">
+                    <h3 id="support-heading">SUPPORT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Care &amp; Handling</a></li>
+                        <li><a href="#" class="footer-link">Hanging Guidelines</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-account" aria-labelledby="account-heading">
+                    <h3 id="account-heading">ACCOUNT</h3>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Log in</a></li>
+                        <li><a href="#" class="footer-link">Create Account</a></li>
+                        <li><a href="#" class="footer-link">Order History</a></li>
+                        <li><a href="#" class="footer-link">Affirm Financing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="footer-terms">
+            <div class="footer-container">
+                <section id="term-links">
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Terms of Sale</a> |
+                        <a href="#">GDPR Compliance</a> | <a href="#">CCPA-CPRA Compliance</a> | <a
+                            href="#">Accessibility Statement</a>
+                    </p>
+                </section>
+                <section id="term-payment">
+                    <h4>SECURE PAYMENT</h4>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </footer>
+    <section id="ar-modal" class="ar-modal" aria-hidden="true">
+
+        <div class="ar-dialog">
+
+            <button id="close-ar-modal" class="ar-close" aria-label="Close">
+                &times;
+            </button>
+
+            <h2>View in Your Space</h2>
+
+            <p class="ar-description">
+                Scan this QR code with your phone to preview
+                the artwork in augmented reality.
+            </p>
+
+            <img src="../Images/qrCodes/mywebAR-QR.png" alt="QR Code for AR Experience" class="ar-qr">
+
+            <a href="https://mywebar.com/p/Project_1_dloldn2drr" class="ar-launch" target="_blank" rel="noopener">
+                Open Camera Preview
+            </a>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
