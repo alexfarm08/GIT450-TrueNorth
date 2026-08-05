@@ -38,12 +38,36 @@
 <main>
     <h1>Checkout</h1>
 
-    <h2>status bar goes here</h2> 
+
+    <div class="progress">
+        <div class="progress-step active">
+            <div class="circle"></div>
+            <span>Shipping</span>
+        </div>
+
+        <div class="progress-step active">
+            <div class="circle"></div>
+            <span>Payment</span>
+        </div>
+
+        <div class="progress-step">
+            <div class="circle"></div>
+            <span>Review</span>
+        </div>
+
+        <div class="progress-step">
+            <div class="circle"></div>
+            <span>Confirmation</span>
+        </div>
+    </div>
+
 
     <div class="checkout">
 
         <!--left side-->
-        <section class="shipping">
+        <section class="checkout-content">
+            <div class="step active" id="shippingStep">
+
         
             <h2>Shipping Information</h2>
             <p>Enter your Shipping details below.</p>
@@ -124,7 +148,147 @@
                     </label>
                 </div>
             </form>
+            </div>
+            <!--payment step-->
+            <div class="step" id="paymentStep">
+
+                <h2>Payment</h2>
+                <p>Enter your payment details.</p>
+
+                <form id="paymentForm">
+
+                    <div class="form-group">
+                        <label for="cardNum">Credit Card Number</label>
+                        <input type="text" id="cardNum">
+                    </div>
+
+                    <div class="payment-row">
+                        <div class="form-group">
+                            <label>Expiration Date</label>
+                            <input type="text" id="expiration" placeholder="MM/YY">
+                        </div>
+
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" id="cvv">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName">
+                    </div>
+
+                    <div class="billing">
+                        <input type="checkbox" id="billing" checked>
+                        <label for="billing">
+                            Billing Address is the same as shipping address
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billingAddress">Billing Address</label>
+                        <input type="text" id="billingAddress" name="billingAddress">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billingApt">Apartment, suite, etc.</label>
+                        <input type="text" id="billingApt" name="billingApt">
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label for="billingCity">City</label>
+                            <input type="text" id="billingCity" name="billingCity">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="billingState">State</label>
+                            <input type="text" id="billingState" name="billingState">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="billingZip">Zipcode</label>
+                            <input type="text" id="billingZip" name="billingZip">
+                        </div>
+                    </div>
+
+                    <button type="button" id="backPayment" class="backBtn">
+                        ← Return to Shipping
+                    </button>
+                </form>
+            </div>
+
+            <!--review step-->
+            <div class="step" id="reviewStep">
+
+                <h2>Review Your Order</h2>
+                <p>Please review your order details before placing your order.</p>
+
+                <div class="review-section">
+                    <div class="review-card">
+                        <div class="review-icon">
+                            <img src="../Images/svg/Mail.svg" alt="Mail icon">
+                        </div>
+
+                        <div>
+                            <h3>Contact Information</h3>
+                            <p id="reviewEmail"></p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-icon">
+                            <img src="../Images/svg/address.svg" alt="Location icon">
+                        </div>
+
+                        <div>
+                            <h3>Shipping Address</h3>
+                            <p id="reviewAddress" style="white-space: pre-line;"></p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-icon">
+                            <img src="../Images/svg/Truck.svg" alt="Truck icon">
+                        </div>
+
+                        <div>
+                            <h3>Shipping Method</h3>
+                            <p id="reviewShipping"></p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-icon">
+                            <img src="../Images/svg/Truck.svg" alt="Truck icon">
+                        </div>
+
+                        <div>
+                            <h3>Payment Method</h3>
+                            <p id="reviewPayment"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="backReview" class="backBtn">
+                    ← Return to Payment
+                </button>
+            </div>
+
+            <!--confirmation step-->
+            <div class="step" id="confirmationStep">
+
+                <h2>Thank You!</h2>
+
+                <p>Your order has been placed.</p>
+
+            </div>
+
         </section>
+
 
         <!--right side-->
         <aside class="summary">
@@ -161,9 +325,24 @@
                 <span>$1000</span>
             </div>
 
-            <button>Continue to Payment →</button>
+            <button id="nextBtn">Continue to Payment →</button>
         </aside>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </main>
 <footer>
@@ -265,5 +444,6 @@
             </div>
         </section>
     </footer>
-</body>
+    <script src="../js/checkout.js"></script>
+    </body>
 </html>
