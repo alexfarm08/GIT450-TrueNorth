@@ -255,7 +255,7 @@ header nav a:hover {
     width: 100%;
     height: 860px;
     background-color: var(--mesa-100);
-    transform: translateY(-60px);
+    transform: translateY(-80px);
     margin-bottom: -60px;
     z-index: 1;
 }
@@ -544,7 +544,7 @@ header nav a:hover {
 .edition-status h2 {
     margin: 0 0 2px;
 
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 1.15;
 }
@@ -552,7 +552,7 @@ header nav a:hover {
 .edition-status p {
     margin: 0;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.01em;
 }
@@ -565,16 +565,13 @@ header nav a:hover {
 #product-options {
     margin: 0;
     padding: 10px 0 0;
-
     border-top: 1px solid var(--mesa-300);
 }
 
 .product-option-group {
     min-width: 0;
-
     margin: 0 0 10px;
     padding: 0;
-
     border: 0;
 }
 
@@ -582,10 +579,8 @@ header nav a:hover {
 .product-dimensions h2 {
     display: block;
     width: 100%;
-
     margin: 0 0 5px;
-
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 1.15;
 }
@@ -638,7 +633,7 @@ header nav a:hover {
     border: 1px solid var(--mesa-300);
     border-radius: 6px;
 
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1;
 
     transition:
@@ -702,7 +697,7 @@ header nav a:hover {
 
     margin: 0 0 5px;
 
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -710,7 +705,7 @@ header nav a:hover {
 .frame-option-content small {
     display: block;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.2;
 }
 
@@ -756,12 +751,13 @@ header nav a:hover {
 
 .product-dimensions h2 {
     margin-bottom: 3px;
+    font-size: 13px;
 }
 
 .product-dimensions p {
     margin: 0;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.25;
 }
 
@@ -774,7 +770,7 @@ header nav a:hover {
     display: grid;
     grid-template-columns: auto 1fr;
 
-    min-height: 64px;
+    min-height: 66px;
 
     align-items: center;
     gap: 24px;
@@ -800,7 +796,7 @@ header nav a:hover {
 .product-financing p {
     margin: 0;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.25;
 }
 
