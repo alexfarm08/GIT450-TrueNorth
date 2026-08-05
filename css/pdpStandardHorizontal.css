@@ -172,6 +172,8 @@ table {
     color: var(--white);
     height: 64px;
     padding: 0 40px;
+    position: relative;
+    z-index: 100;
 }
 
 .header-container {
@@ -237,9 +239,11 @@ header nav a:hover {
 
 .product-detail-container {
     display: grid;
-    grid-template-columns: 860px auto;
-    max-width: 1440px;
-    min-height: 860px;
+    grid-template-columns: 860px 580px;
+
+    width: 1440px;
+    height: 860px;
+
     margin: 0 auto;
 }
 /* ===========================
@@ -248,9 +252,12 @@ header nav a:hover {
 
 .product-gallery {
     position: relative;
-    width: 860px;
+    width: 100%;
     height: 860px;
     background-color: var(--mesa-100);
+    transform: translateY(-60px);
+    margin-bottom: -60px;
+    z-index: 1;
 }
 
 /* ===========================
@@ -441,63 +448,87 @@ header nav a:hover {
 }
 
 /* ===========================
-   PRODUCT-INFO SECTION
+   PRODUCT INFO — FIGMA DESKTOP
 =========================== */
 
-
 #product-info {
-    width: 100%;
+    width: 580px;
+    height: 860px;
+    padding: 16px 40px 24px;
+
     background-color: var(--limestone-0);
     color: var(--alpine-700);
+
     font-family: var(--font-body);
-    padding: 32px 28px 48px;
+    overflow: hidden;
 }
 
 .product-info-container {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
+    width: 500px;
+    max-width: none;
+    margin: 0;
 }
 
-/* --- Product heading --- */
+
+/* ===========================
+   PRODUCT HEADING
+   Figma: approximately 500 × 67px
+=========================== */
 
 .product-heading {
-    padding-bottom: 20px;
+    min-height: 67px;
+    padding: 0 0 14px;
+
     border-bottom: 1px solid var(--mesa-300);
 }
 
 .product-heading h1 {
-    font-family: var(--font-heading);
+    margin: 0 0 2px;
+
     color: var(--alpine-700);
-    font-size: 44px;
+
+    font-family: var(--font-heading);
+    font-size: 34px;
     font-style: italic;
     font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 4px;
+    line-height: 1;
 }
 
 .product-heading p {
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: 0.04em;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
 }
 
-/* --- Edition status --- */
+
+/* ===========================
+   EDITION STATUS
+   Figma: 500 × 72px
+=========================== */
 
 .edition-status {
-    margin-top: 20px;
-    padding: 18px 16px 14px;
+    width: 500px;
+    height: 72px;
+
+    margin: 14px 0 10px;
+    padding: 11px 12px 9px;
+
     background-color: var(--canyon-50);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .edition-progress {
     width: 100%;
-    height: 10px;
-    margin-bottom: 10px;
+    height: 8px;
+
+    margin: 0 0 7px;
+
     overflow: hidden;
+
     background-color: transparent;
-    border: 2px solid var(--canyon-700);
+    border: 1px solid var(--canyon-700);
     border-radius: 999px;
 }
 
@@ -505,35 +536,45 @@ header nav a:hover {
     display: block;
     width: 76%;
     height: 100%;
+
     background-color: var(--canyon-700);
     border-radius: inherit;
 }
 
 .edition-status h2 {
-    font-size: 15px;
+    margin: 0 0 2px;
+
+    font-size: 11px;
     font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 4px;
+    line-height: 1.15;
 }
 
 .edition-status p {
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
 }
 
-/* --- Product options --- */
+
+/* ===========================
+   PRODUCT OPTIONS
+=========================== */
 
 #product-options {
-    margin-top: 12px;
-    padding-top: 16px;
+    margin: 0;
+    padding: 10px 0 0;
+
     border-top: 1px solid var(--mesa-300);
 }
 
 .product-option-group {
     min-width: 0;
-    margin: 0 0 18px;
+
+    margin: 0 0 10px;
     padding: 0;
+
     border: 0;
 }
 
@@ -541,25 +582,41 @@ header nav a:hover {
 .product-dimensions h2 {
     display: block;
     width: 100%;
-    margin-bottom: 8px;
-    font-size: 14px;
+
+    margin: 0 0 5px;
+
+    font-size: 10px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.15;
 }
 
-/* Hide radio buttons visually while keeping them accessible */
+
+/* Keep the radio inputs accessible but invisible */
 
 .product-option-group input[type="radio"] {
     position: absolute;
+
     width: 1px;
     height: 1px;
+
     overflow: hidden;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
+
     white-space: nowrap;
 }
 
-/* --- Shared option button --- */
+
+/* ===========================
+   SIZE OPTIONS
+   Figma button: ~116.88 × 40px
+=========================== */
+
+.size-option-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
 
 .option-button {
     display: block;
@@ -568,15 +625,22 @@ header nav a:hover {
 
 .option-button span {
     display: flex;
-    min-height: 48px;
+    width: 100%;
+    height: 40px;
+    min-height: 0;
+
     align-items: center;
     justify-content: center;
-    padding: 10px 14px;
+
+    padding: 0 8px;
+
     background-color: var(--white);
-    border: 1px solid var(--alpine-700);
-    border-radius: 8px;
-    font-size: 15px;
-    line-height: 1.2;
+    border: 1px solid var(--mesa-300);
+    border-radius: 6px;
+
+    font-size: 11px;
+    line-height: 1;
+
     transition:
         background-color 0.15s ease,
         color 0.15s ease,
@@ -587,29 +651,22 @@ header nav a:hover {
     background-color: var(--canyon-700);
     color: var(--white);
     border-color: var(--canyon-700);
+
     font-weight: 700;
 }
 
-.option-button input:focus-visible + span,
-.frame-option input:focus-visible + .frame-option-content {
-    outline: 3px solid var(--marigold-500);
-    outline-offset: 3px;
-}
 
-/* --- Size selector --- */
-
-.size-option-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-}
-
-/* --- Frame selector --- */
+/* ===========================
+   FRAME OPTIONS
+   Figma card: ~241.53 × 72px
+=========================== */
 
 .frame-option-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px 22px;
+
+    column-gap: 16px;
+    row-gap: 8px;
 }
 
 .frame-option {
@@ -619,14 +676,21 @@ header nav a:hover {
 
 .frame-option-content {
     display: flex;
-    min-height: 86px;
+    width: 100%;
+    height: 72px;
+    min-height: 0;
+
     flex-direction: column;
     justify-content: center;
-    padding: 16px;
+
+    padding: 10px 12px;
+
     background-color: var(--white);
     color: var(--alpine-700);
+
     border: 1px solid var(--mesa-300);
-    border-radius: 10px;
+    border-radius: 7px;
+
     transition:
         background-color 0.15s ease,
         color 0.15s ease,
@@ -635,16 +699,19 @@ header nav a:hover {
 
 .frame-option-content strong {
     display: block;
-    margin-bottom: 6px;
-    font-size: 15px;
+
+    margin: 0 0 5px;
+
+    font-size: 11px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .frame-option-content small {
     display: block;
-    font-size: 15px;
-    line-height: 1.3;
+
+    font-size: 10px;
+    line-height: 1.2;
 }
 
 .frame-option input:checked + .frame-option-content {
@@ -653,46 +720,76 @@ header nav a:hover {
     border-color: var(--canyon-700);
 }
 
-/* --- Liner selector --- */
+
+/* ===========================
+   LINER OPTIONS
+=========================== */
 
 .liner-option-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
 
-/* --- Dimensions --- */
+
+/* ===========================
+   ACCESSIBLE FOCUS
+=========================== */
+
+.option-button input:focus-visible + span,
+.frame-option input:focus-visible + .frame-option-content {
+    outline: 3px solid var(--marigold-500);
+    outline-offset: 2px;
+}
+
+
+/* ===========================
+   DIMENSIONS
+=========================== */
 
 .product-dimensions {
-    margin-top: 4px;
-    padding-bottom: 18px;
+    margin: 0;
+    padding: 0 0 12px;
+
     border-bottom: 1px solid var(--mesa-300);
 }
 
 .product-dimensions h2 {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .product-dimensions p {
-    font-size: 15px;
-    line-height: 1.4;
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.25;
 }
 
-/* --- Price and financing --- */
+
+/* ===========================
+   PRICE AND FINANCING
+=========================== */
 
 .product-purchase {
     display: grid;
-    grid-template-columns: auto minmax(280px, 1fr);
+    grid-template-columns: auto 1fr;
+
+    min-height: 64px;
+
     align-items: center;
-    gap: 32px;
-    padding: 24px 0;
+    gap: 24px;
+
+    padding: 10px 0;
 }
 
 .product-price p {
+    margin: 0;
+
     font-family: var(--font-body);
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1;
+
     white-space: nowrap;
 }
 
@@ -701,45 +798,60 @@ header nav a:hover {
 }
 
 .product-financing p {
-    font-size: 14px;
-    line-height: 1.35;
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.25;
 }
 
 .product-financing a,
 .product-contact a {
+    display: block;
+
     color: var(--canyon-700);
+
     text-decoration: underline;
     text-underline-offset: 2px;
-    display: block;
 }
 
-/* --- Add to cart --- */
+
+/* ===========================
+   ADD TO CART
+   Figma: 500 × 52px
+=========================== */
 
 .add-to-cart-button {
-    width: 100%;
-    min-height: 62px;
-    padding: 14px 24px;
+    width: 500px;
+    height: 52px;
+    min-height: 0;
+
+    padding: 0 24px;
+
     background-color: var(--canyon-700);
     color: var(--white);
+
     border: 0;
-    border-radius: 10px;
+    border-radius: 6px;
+
     font-family: var(--font-body);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
+
     cursor: pointer;
 }
 
 .add-to-cart-button:hover {
-    opacity: 0.9;
     background-color: var(--canyon-500);
 }
 
 .product-contact {
-    margin-top: 16px;
+    margin: 10px 0 0;
+
     text-align: center;
-    font-size: 14px;
-    line-height: 1.4;
+
+    font-size: 10px;
+    line-height: 1.2;
 }
 
 /* --- Screen-reader utility --- */
