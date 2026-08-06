@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fine art should not be limited to grand spaces. Our prints are available in a range of sizes and formats, from smaller statement pieces to large-format prints that anchor an entire room.">
     <meta name="robots" content="index, follow">
-    <title>True North | Inspiration</title>
+    <title>True North | Checkout</title>
     <link rel="stylesheet" href="../css/checkout.css">
     <!-- Link to the svgs for socials -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,22 +13,22 @@
 <body>
     <header>
         <div class="header-container">
-            <a class="home-link" href="../index.html"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
+            <a class="home-link" href="#"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
             <nav>
                 <ul>
-                    <li><a href="fineArt.html">FINE ART</a></li>
-                    <li><a href="#">INSPIRATION</a></li>
-                    <li><a href="../theartist.html">THE ARTIST</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="pages/fineArt.html">FINE ART</a></li>
+                    <li><a href="pages/inspiration.html">INSPIRATION</a></li>
+                    <li><a href="pages/theartist.html">THE ARTIST</a></li>
+                    <li><a href="pages/contact-us.html">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="nav-icons">
                 <button type="button" aria-label="Search" class="icon-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button type="button" aria-label="Shopping cart" class="icon-btn">
+                <a href="pages/checkout.html"><button type="button" aria-label="Shopping cart" class="icon-btn">
                     <i class="fa-solid fa-cart-shopping"></i>
-                </button>
+                </button></a>
                 <button type="button" aria-label="Open menu" class="icon-btn" id="menu-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -37,7 +37,6 @@
     </header>
 <main>
     <h1>Checkout</h1>
-
 
     <div class="progress">
         <div class="progress-step active">
@@ -61,13 +60,11 @@
         </div>
     </div>
 
-
     <div class="checkout">
 
         <!--left side-->
         <section class="checkout-content">
             <div class="step active" id="shippingStep">
-
         
             <h2>Shipping Information</h2>
             <p>Enter your Shipping details below.</p>
@@ -99,7 +96,6 @@
                 </div>
 
                 <div class="row">
-
                     <div class="form-group">
                         <label for="city">City</label>
                         <input type="text" id="city" name="city">
@@ -134,15 +130,6 @@
                         <div>
                             <strong>Expedited Shipping</strong>
                             <p>1-2 Business Days</p>
-                        </div>
-                        <span>$39.99</span>
-                    </label>
-
-                    <label class="option">
-                        <input type="radio" name="shipping">
-                        <div>
-                            <strong>Overnight Shipping</strong>
-                            <p>1 Business Day</p>
                         </div>
                         <span>$39.99</span>
                     </label>
@@ -278,74 +265,130 @@
                 </button>
             </div>
 
-            <!--confirmation step-->
-            <div class="step" id="confirmationStep">
-
-                <h2>Thank You!</h2>
-
-                <p>Your order has been placed.</p>
-
-            </div>
-
         </section>
 
 
         <!--right side-->
-        <aside class="summary">
-            <h2>Your Order</h2>
+        <div id="checkout-right">
+            <aside class="summary">
+                <h2>Your Order</h2>
 
-            <div class="product">
-                <img src="temp" alt="temp">
+                <div class="product">
+                    <img src="../Images/photos/ordersummary.jpg" alt="Photo print of mountains">
 
-                <div>
-                    <h3>Temp Text</h3>
-                    <p>Temp.</p>
-                    <p>Temp.</p>
-                    <p>Temp.</p>
+                    <div>
+                        <h3>A Secret Place</h3>
+                        <p>Gallery Print 24 x 36"</p>
+                        <p>Walnut Frame</p>
+                        <p>QTY: 1</p>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="price">
-                <span>Subtotal</span>
-                <span>$000</span>
-            </div>
+                <hr>
+                <div class="price">
+                    <span>Subtotal</span>
+                    <span>$995.00</span>
+                </div>
 
-            <div class="price">
-                <span>Shipping</span>
-                <span>$000</span>
-            </div>
+                <div class="price">
+                    <span>Shipping</span>
+                    <span>$14.99</span>
+                </div>
 
-            <div class="price">
-                <span>Tax</span>
-                <span>$000</span>
-            </div>
-            <hr>
-            <div class="price-total">
-                <span>Total</span>
-                <span>$1000</span>
-            </div>
+                <div class="price">
+                    <span>Tax</span>
+                    <span>$55.72</span>
+                </div>
+                <hr>
+                <div class="price-total">
+                    <span>Total</span>
+                    <span>$1065.71</span>
+                </div>
 
+                <div class="secure-checkout">
+                    <div>
+                        <img src="../Images/svg/lock.svg" alt="lock icon">
+                        <h4>Secure Checkout</h4>
+                    </div>
+                    <p>We protect your information with industry-standard encryption.</p>
+                </div>
+            </aside>
             <button id="nextBtn">Continue to Payment →</button>
-        </aside>
+        </div>
     </div>
 
+    <div class="step" id="confirmationStep">
 
+        <div class="confirmation-container">
 
+            <!-- left side -->
+            <section class="confirmation-left">
+                <img src="../Images/svg/confirm.svg" alt="Order Complete">
+                <h2>
+                    Thank You, <span id="customerName">Lauren</span>!
+                </h2>
 
+                <p class="confirmation-heading">
+                    YOUR ORDER HAS BEEN PLACED.
+                </p>
+                <hr>
+                <p class="confirmation-text">
+                    You'll receive a confirmation email shortly with your order details and tracking information.
+                </p>
 
+                <div class="confirmation-buttons">
+                    <button class="primary-btn">View Order Details</button>
 
+                    <button class="secondary-btn">Continue Exploring</button>
+                </div>
 
+                <button type="button" id="backConfirmation" class="backBtn">← Return to Review</button>
+            </section>
 
+            <!-- RIGHT SIDE -->
+            <section class="confirmation-right">
+                <img src="../Images/photos/a702d4d4a2b28ab348ff8c76234b4c7b377d9944.jpg" alt="printed photo of a waterfall">
+                <aside class="confirmation-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-content">
+                        <div class="product">
+                            <img src="../Images/photos/ordersummary.jpg" alt="Photo print of mountains">
+                            <div>
+                                <h3>A Secret Place</h3>
+                                <p>Gallery Print 24 x 36"</p>
+                                <p>Walnut Frame</p>
+                                <p>QTY: 1</p>
+                            </div>
+                        </div>
+                        <div class="summary-totals">
+                            <hr>
+                            <div class="price">
+                                <span>Subtotal</span>
+                                <span>$995.00</span>
+                            </div>
 
+                            <div class="price">
+                                <span>Shipping</span>
+                                <span>$14.99</span>
+                            </div>
 
-
-
-
-
-
-
+                            <div class="price">
+                                <span>Tax</span>
+                                <span>$55.72</span>
+                            </div>
+                            <hr>
+                            <div class="price-total">
+                                <span>Total</span>
+                                <span>$1,065.71</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </div>
 </main>
-<footer>
+
+    <footer>
         <section class="footer-sub">
             <div class="footer-container">
                 <section class="footer-sub-content">
@@ -365,7 +408,7 @@
         <section id="footer-links">
             <div class="footer-container">
                 <section id="footer-social">
-                    <a class="home-link" href="../index.html"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
+                    <a class="home-link" href="#"><img src="../Images/logos/logo_white.png" alt="True North logo" class="logo"></a>
                     <p>True North makes fine art &amp; durable goods for home &amp; trail, crafted with care, rooted in story, built to last.</p>
                     <div class="social-links">
                         <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
