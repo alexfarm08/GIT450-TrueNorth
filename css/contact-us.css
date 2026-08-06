@@ -264,7 +264,7 @@ form{
 	width: 300px;
 	padding: 1em;
 	margin: 0 auto;
-	color: #222;
+	color:var(--alpine-900);
 	font-size: 1.1em;
 }
 
@@ -288,12 +288,12 @@ label{
 input{
 	font-size: 1em;
 	padding: 0.25em 0.5em;
-	border: 1px solid #222;
+	border: 1px solid var(--alpine-900);
 	height: 1.5em;
 }
 
 fieldset{
-	border: 1px solid #222;
+	border: 1px solid var(--alpine-900);
 	padding: 0.5em 0 1em 0.5em;
 	margin: 0.75em 0 0.25em 0;
 	width: 98%;
@@ -307,7 +307,7 @@ input[type=submit]{
 	height: auto;
 	margin-left: 67%;
 	color: #fff;
-	background-color: #222;
+	background-color: var(--alpine-900);
 	border: none;
 	font-family: serif;
 }
@@ -325,7 +325,7 @@ input:focus, textarea:focus{
 }
 
 input:error, textarea:error{
-	border-color: #DE0B63;
+	border-color:var(--marigold-900);
 }
 
 /* ===========================
