@@ -1,0 +1,164 @@
+/* clear styles */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+  /* ===========================
+    ROOT VARIABLES
+  =========================== */
+
+:root {
+    
+    
+    /* Core */
+    --white: #FFFFFF;
+    --black: #272425;
+  
+    /* Canyon */
+    --canyon-900: #3D1A0A;
+    --canyon-700: #6B331E;
+    --canyon-500: #8B4A2E;
+    --canyon-400: #A45E40;
+    --canyon-300: #B97355;
+    --canyon-200: #D4A08A;
+    --canyon-100: #E6C4B3;
+    --canyon-50:  #F7EDE7;
+  
+    /* Mesa */
+    --mesa-900: #7A6A57;
+    --mesa-700: #A8967F;
+    --mesa-500: #D2C4AF;
+    --mesa-300: #E4DBD0;
+    --mesa-100: #F2EDE7;
+    --mesa-50:  #FAF8F5;
+  
+    /* Limestone */
+    --limestone-0: #FFFEF2;
+  
+    /* Marigold */
+    --marigold-900: #6B4E10;
+    --marigold-700: #9A7020;
+    --marigold-500: #CA9C37;
+    --marigold-400: #D9B05A;
+    --marigold-300: #E8CA8E;
+    --marigold-200: #F0DDB5;
+    --marigold-100: #F5E8C8;
+    --marigold-50:  #FDF6E8;
+  
+    /* Alpine */
+    --alpine-900: #1A2212;
+    --alpine-700: #2C3820;
+    --alpine-500: #3E5030;
+    --alpine-400: #4F6840;
+    --alpine-300: #7A9168;
+    --alpine-200: #A8BD98;
+    --alpine-100: #C8D8BC;
+    --alpine-50:  #EAF2E4;
+  
+    /* Glacier */
+    --glacier-900: #1F3A4F;
+    --glacier-700: #2D5470;
+    --glacier-500: #437394;
+    --glacier-400: #5A8FAD;
+    --glacier-300: #8CB8CF;
+    --glacier-200: #B2D3E3;
+    --glacier-100: #C8DFE9;
+    --glacier-50:  #EAF4F8;
+  
+  /* Fonts */
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Work Sans", system-ui, sans-serif;
+  }
+  
+  
+  /* ===========================
+     PLAYFAIR DISPLAY
+  =========================== */
+  
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/variable/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/variable/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400 900;
+    font-display: swap;
+  }
+  
+  /* ===========================
+     WORK SANS
+  =========================== */
+  
+  @font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/variable/WorkSans-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/variable/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+  }
