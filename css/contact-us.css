@@ -245,3 +245,11 @@ header nav a:hover {
     color: var(--white);
     padding: 40px;
 }
+.hero-content {
+    font-family:Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    font-style:italic;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
