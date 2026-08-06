@@ -39,15 +39,36 @@
             </div>
         </section>
 
-    <form action="/submit-contact" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        <button type="submit">Submit</button>
-    </form>
+    <form>
+        <label for="my-name">Full Name<span class="required">*</span></label>
+        <input id="name" type="text" autocomplete="name" aria-required="true">
+    </input>
+
+    <label for ="my-email">Email<span class="required">*</span></label>
+    <input id="my-email" type="text" autocomplete="name"aria-required="true">
+</input>
+
+<label for ="my-phone">Phone<span class="required">*</span></label>
+<input id="my-phone" type="text" autocomplete="name"aria-required="true">
+</input>
+
+<fieldset>
+    <legend>Preferred Contact Method</legend>
+<input id="my-phone" type="radio" name="phone" value="number">
+	<label for="pref-phone">Phone</label>
+
+<input id="my-email" type="radio" name="email" value="info">
+	<label for="pref-email">Email</label>
+
+</fieldset>
+
+<label for="my-message">Message</label>
+<textarea name="my-message" id="my-message" autocomplete="message"></textarea>
+
+<input type="submit" name="my-submit" id="my-submit" value="Submit"></input>
+	
+</form>
+
     </main>
     <footer>
         <section class="footer-sub">
