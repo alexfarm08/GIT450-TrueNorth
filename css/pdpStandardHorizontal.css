@@ -861,6 +861,294 @@ header nav a:hover {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+/* ===========================
+   PRODUCT DETAILS TABS
+=========================== */
+
+#product-details-tabs {
+    width: 100%;
+    min-height: 818px;
+
+    padding: 28px 40px 54px;
+
+    background-color: var(--white);
+    color: var(--alpine-700);
+
+    font-family: var(--font-body);
+}
+
+.product-details-tabs-container {
+    width: 100%;
+    max-width: 1062px;
+
+    margin: 0 auto;
+}
+
+
+/* ===========================
+   TAB LIST
+=========================== */
+
+.details-tab-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 943px;
+    height: 41px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid var(--mesa-300);
+}
+
+
+/* ===========================
+   TAB BUTTONS
+=========================== */
+
+.details-tab {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 41px;
+
+    padding: 0 12px;
+
+    background-color: transparent;
+    color: var(--alpine-700);
+
+    border: 0;
+
+    font-family: var(--font-body);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.details-tab:hover {
+    color: var(--canyon-700);
+}
+
+.details-tab.active {
+    color: var(--canyon-700);
+    font-weight: 700;
+}
+
+.details-tab.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--canyon-700);
+}
+
+.details-tab:focus-visible {
+    outline: 3px solid var(--marigold-500);
+    outline-offset: -3px;
+}
+
+
+/* ===========================
+   DYNAMIC CONTENT AREA
+=========================== */
+
+.details-content {
+    width: 100%;
+    min-height: 666px;
+    padding: 30px 0 40px;
+}
+
+/* ===========================
+   DESCRIPTION TAB CONTENT
+=========================== */
+
+.details-description-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 519px));
+    column-gap: 24px;
+    align-items: start;
+}
+
+.details-description-layout p {
+    margin-bottom: 12px;
+}
+
+.details-description-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.details-content-block {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--mesa-300);
+}
+
+.details-content-block:last-child {
+    border-bottom: 0;
+}
+
+.details-content h2 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.details-content h3 {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.details-content p {
+    /* margin-bottom: 12px; */
+
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.details-content p:last-child {
+    margin-bottom: 0;
+}
+
+.details-placeholder {
+    text-align: center;
+}
+
+.details-content a {
+    color: var(--canyon-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.details-content em {
+    font-style: italic;
+}
+
+/* ===========================
+   DIMENSIONS TAB CONTENT
+=========================== */
+
+.details-dimensions-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 519px));
+    column-gap: 24px;
+    row-gap: 16px;
+    align-items: start;
+}
+
+.dimension-group {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--mesa-300);
+}
+
+.dimension-group h2 {
+    margin-bottom: 16px;
+
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.dimension-group p {
+    margin-bottom: 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.dimension-group p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===========================
+   FAQ TAB CONTENT
+=========================== */
+
+.details-faq-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 519px));
+    column-gap: 24px;
+    align-items: start;
+}
+
+.details-faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.faq-group {
+    margin: 0;
+    padding: 0 0 12px;
+    border-bottom: 1px solid var(--mesa-300);
+}
+
+.faq-group + .faq-group {
+    padding-top: 12px;
+}
+
+.faq-group:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.faq-group h2 {
+    margin: 0 0 10px;
+
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.faq-group h3 {
+    margin: 10px 0 4px;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.faq-group p {
+    margin: 0 0 8px;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.faq-group p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
 
 /* ===========================
    EXPLORE MORE PRINTS
