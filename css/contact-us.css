@@ -246,7 +246,7 @@ header nav a:hover {
     padding: 40px;
 }
 .hero-content {
-    font-family: var(--font-heading);
+    font-family: var(--font-body);
     font-size: 48px;
     font-weight: 700;
     max-width: 800px;
