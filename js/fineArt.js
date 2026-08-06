@@ -12,8 +12,12 @@ products.forEach(product => {
     card.className = 'product-card';
 
     card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <p class="product-name">${product.name}</p>
+        <a href="pdpStandardHorizontal.html">
+            <img src="${product.image}" alt="${product.name}">
+        </a>
+        <a href="pdpStandardHorizontal.html" class="product-link">
+            <p class="product-name">${product.name}</p>
+        </a>
         <p class="product-location">${product.location}</p>
         <p class="product-price">${product.price}</p>
     `;
