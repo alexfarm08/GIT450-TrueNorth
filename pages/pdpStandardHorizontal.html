@@ -222,7 +222,37 @@
             </div>
         </section>
         <!-- Insert Description / Dimensions / FAQ  component -->
+        <section id="product-details-tabs">
+            <div class="product-details-tabs-container">
 
+                <!-- Tab buttons -->
+                <div class="details-tab-list" role="tablist" aria-label="Product information">
+                    <button id="description-tab" class="details-tab active" type="button" role="tab"
+                        aria-selected="true" aria-controls="details-content" data-tab="description">
+                        Description
+                    </button>
+
+                    <button id="dimensions-tab" class="details-tab" type="button" role="tab" aria-selected="false"
+                        aria-controls="details-content" data-tab="dimensions">
+                        Dimensions
+                    </button>
+
+                    <button id="faqs-tab" class="details-tab" type="button" role="tab" aria-selected="false"
+                        aria-controls="details-content" data-tab="faqs">
+                        FAQs
+                    </button>
+                </div>
+
+
+                <!-- JavaScript will replace the content inside this container -->
+                <div id="details-content" class="details-content" role="tabpanel" aria-live="polite"
+                    aria-labelledby="description-tab">
+                    <!-- Description content loads here first -->
+                    <p>Product information will appear here.</p>
+                </div>
+
+            </div>
+        </section>
         <!-- Explore more prints section  -->
         <section id="explore-more">
             <div class="explore-more-container">
@@ -273,31 +303,31 @@
                         <p class="product-location">Location Name, State/Provence</p>
                         <p class="product-price">$2,400</p>
                     </article>
-                </div>              
+                </div>
             </div>
         </section>
         <!-- Import call to action component from inspiration page  -->
         <section id="call-to-action">
             <div class="card" id="card1">
-                <img src="../Images/svg/shield-hands.svg" alt="need vector imgs">  
+                <img src="../Images/svg/shield-hands.svg" alt="need vector imgs">
                 <h3>Direct from the artist</h3>
                 <p>Every purchase goes straight to the people who made the work. No gallery, no middleman.</p>
                 <a>MEET THE ARTISTS <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="card" id="card2">
-                <img src="../Images/svg/Emblem.svg" alt="need vector imgs"> 
+                <img src="../Images/svg/Emblem.svg" alt="need vector imgs">
                 <h3>Limited edition</h3>
                 <p>Each image is capped at 50 prints. All prints are insured during delivery.</p>
                 <a>VIEW SHIPPING FAQS <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="card" id="card3">
-                <img src="../Images/svg/right-angle.svg" alt="need vector imgs"> 
+                <img src="../Images/svg/right-angle.svg" alt="need vector imgs">
                 <h3>Solid wood frames</h3>
                 <p>Hand-built in the USA from solid wood. Crafted to cradle your print, and built to last.</p>
                 <a>SEE OUR PROCESS <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="card" id="card4">
-                <img src="../Images/svg/tools.svg" alt="need vector imgs"> 
+                <img src="../Images/svg/tools.svg" alt="need vector imgs">
                 <h3>Ready to hang</h3>
                 <p>Your print ships fully assembled mounting hardware included. Need help? Give us a call.</p>
                 <a>CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
