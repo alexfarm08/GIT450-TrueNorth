@@ -979,6 +979,10 @@ header nav a:hover {
     align-items: start;
 }
 
+.details-description-layout p {
+    margin-bottom: 12px;
+}
+
 .details-description-secondary {
     display: flex;
     flex-direction: column;
@@ -1011,7 +1015,7 @@ header nav a:hover {
 }
 
 .details-content p {
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 
     font-size: 16px;
     line-height: 1.45;
@@ -1088,20 +1092,26 @@ header nav a:hover {
 .details-faq-column {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 0;
 }
 
 .faq-group {
-    padding-bottom: 16px;
+    margin: 0;
+    padding: 0 0 12px;
     border-bottom: 1px solid var(--mesa-300);
 }
 
+.faq-group + .faq-group {
+    padding-top: 12px;
+}
+
 .faq-group:last-child {
+    padding-bottom: 0;
     border-bottom: 0;
 }
 
 .faq-group h2 {
-    margin-bottom: 14px;
+    margin: 0 0 10px;
 
     font-family: var(--font-body);
     font-size: 20px;
@@ -1110,7 +1120,7 @@ header nav a:hover {
 }
 
 .faq-group h3 {
-    margin: 14px 0 6px;
+    margin: 10px 0 4px;
 
     font-family: var(--font-body);
     font-size: 16px;
@@ -1119,7 +1129,7 @@ header nav a:hover {
 }
 
 .faq-group p {
-    margin-bottom: 12px;
+    margin: 0 0 8px;
 
     font-family: var(--font-body);
     font-size: 16px;

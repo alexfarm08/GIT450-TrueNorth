@@ -242,9 +242,6 @@ const tabContent = {
                 will replace or repair any damage that occurs during
                 transit from our production facility to the destination
                 address listed on your order.
-            </p>
-
-            <p>
                 We cannot insure shipments once they have been transported
                 from the original delivery destination.
             </p>
@@ -261,9 +258,6 @@ const tabContent = {
                 home office in Goodyear, Arizona with globally-sourced
                 materials. The materials for our frames are hand-made from
                 solid wood in Milan, Italy.
-            </p>
-
-            <p>
                 Our prints and any custom pieces may come from a number of
                 locations, including our production partners in Santa Ana,
                 California; San Cruz, California; Toronto, Ontario;
@@ -297,9 +291,6 @@ const tabContent = {
                 Dust the glaze with a soft, damp cloth or chamois. Apply
                 only light pressure, rinse with clean water, and dry by
                 blotting the cloth.
-            </p>
-
-            <p>
                 We recommend using compressed or canned air to remove any
                 surface dust that accumulates on the liner over time,
                 making sure that no moisture is expelled from the can
@@ -313,9 +304,6 @@ const tabContent = {
                 handled properly, should not require care other than
                 periodic dusting. A soft, dry cloth may be used to remove
                 spots or debris.
-            </p>
-
-            <p>
                 Avoid the use of liquid and chemical cleaning products, as
                 these may cause the protective finish to deteriorate over
                 time.
@@ -324,19 +312,16 @@ const tabContent = {
             <h3>What are the best ways to protect my artwork from damage?</h3>
 
             <p>
-    To preserve your artwork's quality, avoid direct sunlight,
-    use LED lighting with low heat and UV output, and always
-    handle with clean hands or cotton gloves to prevent oils
-    from transferring onto the surface.
-</p>
-
-<p>
-    If your artwork requires professional cleaning or restoration,
-    please contact a True North art specialist before attempting
-    any repairs. Improper cleaning methods or harsh chemicals may
-    permanently damage the print, glazing, frame, or protective
-    finish.
-</p>
+                To preserve your artwork's quality, avoid direct sunlight,
+                use LED lighting with low heat and UV output, and always
+                handle with clean hands or cotton gloves to prevent oils
+                from transferring onto the surface.
+                If your artwork requires professional cleaning or restoration,
+                please contact a True North art specialist before attempting
+                any repairs. Improper cleaning methods or harsh chemicals may
+                permanently damage the print, glazing, frame, or protective
+                finish.
+            </p>
         </section>
 
     </div>
