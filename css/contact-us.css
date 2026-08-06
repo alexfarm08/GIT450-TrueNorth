@@ -225,3 +225,23 @@ header nav a:hover {
 .icon-btn:hover {
     color: var(--alpine-200);
 }
+
+/*=======
+   Hero
+=========================== */
+
+.hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../Images/photos/a702d4d4a2b28ab348ff8c76234b4c7b377d9944.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;   /* was center */
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 40px;
+}
