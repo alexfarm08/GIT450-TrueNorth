@@ -246,7 +246,7 @@ header nav a:hover {
     padding: 40px;
 }
 .hero-content {
-    font-family:Playfair Display;
+    font-family: var(--font-heading);
     font-size: 48px;
     font-weight: 700;
     font-style:italic;
@@ -266,6 +266,7 @@ form{
 	margin: 0 auto;
 	color:var(--alpine-900);
 	font-size: 1.1em;
+    font-family: var(--font-body);
 }
 
 input, label, fieldset{
@@ -311,7 +312,7 @@ input[type=submit]{
 	background-color: var(--alpine-400);
 	border: none;
 	border-radius: 50px;
-	font-family: serif;
+	font-family: var(--font-body);
 	cursor: pointer;
 }
 
