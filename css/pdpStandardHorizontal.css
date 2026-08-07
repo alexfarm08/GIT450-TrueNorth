@@ -891,13 +891,22 @@ header nav a:hover {
 }
 
 .cart-dialog h2{
-    margin-bottom:16px;
+    margin-bottom:12px;
+
     font-family:var(--font-heading);
-    font-size:2rem;
+    font-size:36px;
+    font-style:italic;
+    font-weight:700;
+    line-height:1.1;
+
+    color:var(--alpine-700);
 }
 
 .cart-dialog p{
     margin-bottom:24px;
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.5;
 }
 
 .cart-close{
@@ -934,6 +943,11 @@ header nav a:hover {
     border:1px solid var(--canyon-700);
     border-radius:8px;
     cursor:pointer;
+
+    font-family:var(--font-body);
+    font-size:15px;
+    font-weight:600;
+    line-height:1;
 }
 
 .cart-primary{
@@ -945,6 +959,11 @@ header nav a:hover {
     background:var(--canyon-700);
     color:white;
     text-decoration:none;
+
+    font-family:var(--font-body);
+    font-size:15px;
+    font-weight:600;
+    line-height:1;
 }
 
 /* ===========================
