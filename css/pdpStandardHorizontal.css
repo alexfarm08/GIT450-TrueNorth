@@ -861,6 +861,111 @@ header nav a:hover {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+
+/* ===========================
+   ADD TO CART MODAL
+=========================== */
+.cart-modal{
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    z-index: 9999;
+}
+
+.cart-modal.open{
+    display:flex;
+}
+
+.cart-dialog{
+    position: relative;
+    width:420px;
+    max-width:90vw;
+    padding:36px;
+    background:var(--limestone-0);
+    border-radius:12px;
+    text-align:center;
+}
+
+.cart-dialog h2{
+    margin-bottom:12px;
+
+    font-family:var(--font-heading);
+    font-size:36px;
+    font-style:italic;
+    font-weight:700;
+    line-height:1.1;
+
+    color:var(--alpine-700);
+}
+
+.cart-dialog p{
+    margin-bottom:24px;
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.5;
+}
+
+.cart-close{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:none;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.cart-icon{
+    font-size:56px;
+    color:var(--alpine-400);
+    margin-bottom:20px;
+
+}
+
+.cart-actions{
+    display:flex;
+    gap:16px;
+    margin-top:28px;
+
+}
+
+.cart-actions>*{
+    flex:1;
+}
+
+.cart-secondary{
+    height:48px;
+    background:transparent;
+    border:1px solid var(--canyon-700);
+    border-radius:8px;
+    cursor:pointer;
+
+    font-family:var(--font-body);
+    font-size:15px;
+    font-weight:600;
+    line-height:1;
+}
+
+.cart-primary{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:48px;
+    border-radius:8px;
+    background:var(--canyon-700);
+    color:white;
+    text-decoration:none;
+
+    font-family:var(--font-body);
+    font-size:15px;
+    font-weight:600;
+    line-height:1;
+}
+
 /* ===========================
    PRODUCT DETAILS TABS
 =========================== */
