@@ -6,6 +6,12 @@ const openButton = document.querySelector("#open-ar-modal");
 const closeButton = document.querySelector("#close-ar-modal");
 const modal = document.querySelector("#ar-modal");
 
+//variable for cart
+const cartModal=document.querySelector("#cart-modal");
+const openCartButton=document.querySelector("#open-cart-modal");
+const closeCartButton=document.querySelector("#close-cart-modal");
+const continueShopping=document.querySelector("#continue-shopping");
+
 //***************************************
 //Functions to open modal and close modal
 //***************************************
@@ -21,6 +27,18 @@ function closeModal() {
   modal.setAttribute("aria-hidden", "true");
   openButton.focus();
 }
+
+//CART
+function openCartModal(){
+    cartModal.classList.add("open");
+    cartModal.setAttribute("aria-hidden","false");
+}
+
+function closeCartModal(){
+    cartModal.classList.remove("open");
+    cartModal.setAttribute("aria-hidden","true");
+}
+
 
 /* ===========================
    PRODUCT DETAILS TABS
@@ -375,9 +393,15 @@ modal.addEventListener("click", function (e) {
 });
 
 document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && modal.classList.contains("open")) {
-    closeModal();
-  }
+
+    if (e.key === "Escape") {
+        if(modal.classList.contains("open")){
+            closeModal();
+        }
+        if(cartModal.classList.contains("open")){
+            closeCartModal();
+        }
+    }
 });
 
 
@@ -388,4 +412,15 @@ detailTabs.forEach(function (tab) {
 
     displayTabContent(selectedTabName, tab);
   });
+});
+
+//CART MODAL
+openCartButton.addEventListener("click",openCartModal);
+closeCartButton.addEventListener("click",closeCartModal);
+continueShopping.addEventListener("click",closeCartModal);
+cartModal.addEventListener("click",function(e){
+    if(e.target===cartModal){
+        closeCartModal();
+    }
+
 });
