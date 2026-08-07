@@ -207,8 +207,8 @@
                             </section>
 
                             <!-- Cart button -->
-                            <button class="add-to-cart-button" type="submit">
-                                Add to cart
+                            <button id="open-cart-modal" class="add-to-cart-button" type="button">
+                                Add to Cart
                             </button>
 
                             <p class="product-contact">
@@ -467,6 +467,36 @@
 
         </div>
 
+    </section>
+    <section id="cart-modal" class="cart-modal" aria-hidden="true">
+
+        <div class="cart-dialog">
+
+            <button id="close-cart-modal" class="cart-close" aria-label="Close">
+                &times;
+            </button>
+
+            <i class="fa-solid fa-circle-check cart-icon"></i>
+
+            <h2>Added to Cart</h2>
+            <p>
+                Your artwork has been added to your cart.
+            </p>
+
+            <div class="cart-actions">
+                <button id="continue-shopping" class="cart-secondary">
+
+                    Continue Shopping
+
+                </button>
+
+                <a href="checkout.html" class="cart-primary">
+
+                    Go to Checkout
+
+                </a>
+            </div>
+        </div>
     </section>
 </body>
 
