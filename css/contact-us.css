@@ -253,3 +253,341 @@ header nav a:hover {
     max-width: 800px;
     margin: 0 auto 40px auto;
 }
+
+
+/*======================
+   FORM
+=========================== */
+
+form{
+	display: block;
+	width: 300px;
+	padding: 1em;
+	margin: 0 auto;
+	color:var(--alpine-900);
+	font-size: 1.1em;
+}
+
+input, label, fieldset{
+	display: block;
+	width: 95%;
+}
+
+.required{
+  display: inline-block;
+  color: #DE0B63;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid var(--alpine-900);
+	height: 1.5em;
+}
+
+fieldset{
+	border: 1px solid var(--alpine-900);
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	width: 60%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	background-color: var(--alpine-400);
+	border: none;
+	border-radius: 50px;
+	font-family: serif;
+	cursor: pointer;
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+input[type=submit]:hover{
+	background-color: var(--marigold-900);
+}
+
+input:focus, textarea:focus{
+	border-color: blue;
+	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
+	border-radius: 4px;
+}
+
+input:error, textarea:error{
+	border-color:var(--marigold-900);
+}
+
+/* ===========================
+   HAMBURGER MENU (mobile)
+=========================== */
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: var(--alpine-700);
+        padding: 16px 40px;
+        z-index: 100;
+    }
+
+    header nav.nav-open {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    font-family: var(--font-body);
+}
+
+/* --- Subscribe band --- */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-sub {
+    background-color: var(--canyon-500);
+    color: var(--white);
+    padding: 24px 40px 40px;
+}
+
+.footer-sub .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-sub-content {
+    max-width: 480px;
+}
+
+.footer-sub-content h2 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-sub-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--white);
+}
+
+.footer-sub-form label {
+    flex-basis: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--white);
+}
+
+.footer-sub-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#sub-email {
+    flex: 1 1 320px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background: var(--canyon-300);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
+#sub-email::placeholder {
+    color: var(--white);
+}
+
+.footer-sub-form button {
+    padding: 12px 24px;
+    background: var(--white);
+    color: var(--canyon-900);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-sub-form button:hover {
+    background: var(--canyon-100);
+}
+
+.footer-sub-form > p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--white);
+    margin-top: 14px;
+    max-width: 640px;
+}
+
+.footer-sub-form a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* --- Link columns band --- */
+
+#footer-links {
+    background-color: var(--canyon-700);
+    color: var(--white);
+    padding: 48px 40px;
+}
+
+#footer-links .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--white);
+}
+
+#footer-social .logo {
+    height: auto;
+    width: 260px;
+}
+
+#footer-social p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--canyon-100);
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 24px;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 36px;
+}
+
+.social-links a:hover {
+    color: var(--canyon-100);
+}
+
+#footer-links nav h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.link-list li {
+    margin-bottom: 24px;
+}
+
+.footer-link {
+    color: var(--white);
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.footer-link:hover {
+    color: var(--canyon-200);
+    text-decoration: underline;
+}
+
+/* --- Legal / payment band --- */
+
+#footer-terms {
+    background-color: var(--canyon-700);
+    color: var(--white);
+    padding: 20px 40px;
+}
+
+#footer-terms .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+#term-links {
+    flex: 1;
+}
+
+#term-links p {
+    font-size: 11px;
+    color: var(--white);
+    margin: 0;
+}
+
+#term-links a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#term-links a:hover {
+    color: var(--white);
+}
+
+#term-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+#term-payment h4 {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.payment-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.payment-icons i {
+    font-size: 20px;
+    color: var(--white);
+}
+
